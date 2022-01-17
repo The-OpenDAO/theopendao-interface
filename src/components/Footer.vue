@@ -44,10 +44,10 @@ const list = [
     name: 'etherscan',
     url: 'https://etherscan.io/token/0x3b484b82567a09e2588A13D54D032153f0c0aEe0',
   },
-  // {
-  //   name: 'facebook',
-  //   url: 'https://www.facebook.com/TheOpenDAO',
-  // },
+  {
+    name: 'github',
+    url: 'https://github.com/The-OpenDAO',
+  },
   // {
   //   name: 'instagram',
   //   url: 'https://www.instagram.com/the_opendao/ ',
