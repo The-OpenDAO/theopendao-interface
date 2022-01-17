@@ -74,6 +74,14 @@ function changeNetworks() {
 </template>
 <style lang="scss" scoped>
 $themeColor: #00c38bff;
+html:lang(fr) .connect, html:lang(it) .connect  {
+  img{
+    left: 28px!important;
+  }
+  .connect-style-disable{
+    padding-left: 65px!important;
+  }
+}
 .metamask-img {
   // margin-top: 15px;
   width: 45px !important;
