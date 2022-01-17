@@ -1,0 +1,57 @@
+$offset-step: 2;
+$offset-start: 0;
+$offset-end: 50;
+$margin-map: (
+        mt: margin-top,
+        mr: margin-right,
+        mb: margin-bottom,
+        ml: margin-left,
+        mx: margin-x,
+        my: margin-y,
+        ma: margin
+);
+$padding-map: (
+        pt: padding-top,
+        pr: padding-right,
+        pb: padding-bottom,
+        pl: padding-left,
+        px: padding-x,
+        py: padding-y,
+        pa: padding
+);
+
+@each $key, $val in $margin-map {
+    @for $index from $offset-start through $offset-end {
+        $offset-size: $index * $offset-step;
+
+        .#{$key}#{$offset-size} {
+            @if $val == margin-x {
+                margin-left: #{$offset-size}px !important;
+                margin-right: #{$offset-size}px !important;
+            } @else if $val == margin-y {
+                margin-top: #{$offset-size}px !important;
+                margin-bottom: #{$offset-size}px !important;
+            } @else {
+                #{$val}: #{$offset-size}px !important;
+            }
+        }
+    }
+}
+
+@each $key, $val in $padding-map {
+    @for $index from $offset-start through $offset-end {
+        $offset-size: $index * $offset-step;
+
+        .#{$key}#{$offset-size} {
+            @if $val == padding-x {
+                padding-left: #{$offset-size}px !important;
+                padding-right: #{$offset-size}px !important;
+            } @else if $val == padding-y {
+                padding-top: #{$offset-size}px !important;
+                padding-bottom: #{$offset-size}px !important;
+            } @else {
+                #{$val}: #{$offset-size}px !important;
+            }
+        }
+    }
+}

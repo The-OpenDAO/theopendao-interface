@@ -1,0 +1,45 @@
+.bdt {
+  border-top: 1px solid #DDDDDD;
+}
+
+.bdr {
+  border-right: 1px solid #DDDDDD;
+}
+
+.bdb {
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.bdl {
+  border-left: 1px solid #DDDDDD;
+}
+
+.bdx {
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+
+.bdy {
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.bda {
+  border: 1px solid #DDDDDD;
+}
+
+.bdrs0 {
+  border-radius: 0px !important;
+}
+.bdrs2 {
+  border-radius: 2px !important;
+}
+.bdrs4 {
+  border-radius: 4px !important;
+}
+.bdrs6 {
+  border-radius: 6px !important;
+}
+.bdrs8 {
+  border-radius: 8px !important;
+}

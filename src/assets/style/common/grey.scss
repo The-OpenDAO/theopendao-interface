@@ -1,0 +1,41 @@
+@import '../variable.scss';
+
+
+.grey {
+    &00 {
+        color: $app-grey-00;
+    }
+
+    &33 {
+        color: $app-grey-33;
+    }
+
+    &66 {
+        color: $app-grey-66;
+    }
+
+    &99 {
+        color: $app-grey-99;
+    }
+
+    &bb {
+        color: $app-grey-bb;
+    }
+
+    &dd {
+        color: $app-grey-dd;
+    }
+
+    &f2 {
+        color: $app-grey-f2;
+    }
+
+    &fa {
+        color: $app-grey-fa;
+    }
+
+    &ff {
+        color: $app-grey-ff;
+    }
+}
+

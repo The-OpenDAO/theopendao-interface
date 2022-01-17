@@ -1,0 +1,88 @@
+@import "./normalize.css";
+@import "./element-ui.scss";
+@import "./transition.scss";
+@import "./variable.scss";
+@import "./theme.scss";
+
+// style - format
+@import './common/main.scss';
+
+html {
+  overflow-x: hidden;
+  background-color: #18191d;
+  font-family: D-DIN;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $color-background-base;
+}
+
+.container {
+  width: 1220px;
+  max-width: 100vw;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.el-button {
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon {
+      margin-right: 4px;
+    }
+  }
+}
+
+.el-notification {
+  background-color: #26272c !important;
+  border-color: #26272c !important;
+  .el-notification__title {
+    color: #fff;
+  }
+  .el-notification__content a {
+    color: #4e7dd3 !important;
+  }
+}
+
+.el-timeline-item {
+  padding-bottom: 10px !important;
+}
+
+button:focus{
+  outline: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 760px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  .container {
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .hide-pc {
+    display: none !important;
+  }
+}

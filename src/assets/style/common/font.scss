@@ -1,0 +1,18 @@
+// font-size
+@for $i from 0 through 20 {
+    .fz#{10 + $i * 2} {
+        font-size: 10 + $i * 2 + px !important;
+    }
+}
+@font-face {
+    font-family: "D-DIN";
+    src: url('@/assets/font-family/D-DIN.otf')
+}
+@font-face {
+    font-family: "D-DIN-Bold";
+    src: url('@/assets/font-family/D-DIN-Bold.otf')
+}
+@font-face {
+    font-family: "D-DIN-Italic";
+    src: url('@/assets/font-family/D-DIN-Italic.otf')
+}

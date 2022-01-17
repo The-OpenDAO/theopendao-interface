@@ -1,0 +1,17 @@
+$size-step: 100;
+$size-start: 0;
+$size-end: 7;
+$size-map: (
+        w: width,
+        h: height
+);
+
+@each $key, $val in $size-map {
+    @for $index from $size-start through $size-end {
+        $size: $index * $size-step;
+
+        .#{$key}#{$size} {
+            #{$val}: #{$size}px !important;
+        }
+    }
+}

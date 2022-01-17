@@ -1,0 +1,87 @@
+$themes: (
+        light: (
+          //font
+                font_color1: #303133,
+                font_color2: #606266,
+          //background
+                background_color1: #f3f6f9,
+                background_color2: #f6f7f9,
+                background_color3: #ffffff,
+                background_color4: #ffffff,
+                background_color5: #f6f8fa,
+                background_color6: #f6f8fa,
+          // markdown
+                background_color7: #ffffff,
+          //border
+                border_color1: #DCDFE6,
+                border_color2: #8bb9f3,
+                border_color3: #fafafb,
+          //bg
+                background_img1: url("~@/assets/images/wave-light.png")
+        ),
+        dark: (
+          //font
+                font_color1: #d6d6d6,
+                font_color2: #a3a3a3,
+          //bg
+                background_color1: #000000,
+                background_color2: #141414,
+                background_color3: #1F1F1F,
+                background_color4: #000000,
+                background_color5: #bfbfbf,
+                background_color6: #262626,
+          // markdown
+                background_color7: #464546,
+          //border
+                border_color1: #3d414a,
+                border_color2: #3d414a,
+                border_color3: #595959,
+          //bg
+                background_img1: url("~@/assets/images/wave-dark.png")
+        )
+);
+
+// map theme
+@mixin themeify {
+  @each $theme-name, $theme-map in $themes {
+    // make a variable become global  !global
+    $theme-map: $theme-map !global;
+    //judge data-theme #{} is slot by sass
+    [data-theme="#{$theme-name}"] & {
+      @content;
+    }
+  }
+}
+
+// get color by key
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+// bg
+@mixin background_color($color) {
+  @include themeify {
+    background-color: themed($color) !important;
+  }
+}
+
+//font-color
+@mixin font_color($color) {
+  @include themeify {
+    color: themed($color) !important;
+  }
+}
+
+//border-color
+@mixin border_color($color) {
+  @include themeify {
+    border-color: themed($color) !important;
+  }
+}
+
+//border-shadow
+@mixin border_shadow($color) {
+  @include themeify {
+    box-shadow: 0 0.133rem 0.133rem themed($color) !important;
+  }
+}
