@@ -128,6 +128,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  html:lang(it) .item  {
+    padding: 20px 2px!important;
+  }
   .chart {
     flex-direction: column-reverse;
   }

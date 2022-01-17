@@ -1,7 +1,7 @@
 export default {
     name: 'Deutsch',
     common: {
-      tvl: 'gesperrter Gesamtwert der Token',
+      tvl: 'Gesperrter Gesamtwert',
       apy: 'APY',
       bridge: 'Verbindung',
       dex: 'DEX',
@@ -52,7 +52,7 @@ export default {
       LPIncentive: 'LP Belohnung',
       airdrop: 'Airdrop',
       analyticsTime: 'Daten von Dune Analytics bis zum 12. Januar 2022',
-      usersClaimed: 'Benutzer die bereits ihren Airdrop beansprucht haben',
+      usersClaimed: 'Benutzer behauptet',
       transactions: 'Transaktionen',
       holders: 'On-Chain Benützer',
       openDAO: 'OpenDAO',
@@ -65,7 +65,7 @@ export default {
     },
   
     howToBuy: {
-      title: 'Wo kann man den Token erwerben',
+      title: 'WIE KAUFEN',
       desc: 'Man kann zur Zeit $SOS auf den folgenden Börsen und dezentralen Börsen kaufen',
       youCanBuy: 'Man kann $SOS kaufen in',
     },
@@ -76,12 +76,11 @@ export default {
                 20% der $SOS Tokens sind für Belohnungen durch das Staking
               <br />
               <br />
-              Der erste OpenDAO "Verbesserungsvorschlag" ist durchgegangen mit xxx . Man kann den Snapshot 
+              Der erste OpenDAO "Improvement Proposal" wurde mit 64,36% angenommen, womit einem linearen 1-Jahres-Zeitplan zugestimmt wurde. Sie können den Snapshot
               </span>
-              <a href="https://snapshot.org/#/theopendao.eth/proposal/0x5d68e1e5cb016ddb79bd4f6d2b9453f2a1330415cf785b7df4e6b5cefca0889e" target="_blank">dafür hier finden</a>
+              <a href="https://snapshot.org/#/theopendao.eth/proposal/0x5d68e1e5cb016ddb79bd4f6d2b9453f2a1330415cf785b7df4e6b5cefca0889e" target="_blank">hier finden</a> 
               <span>
-              . 64,36% stimmten einem 1-Jahr Veröffentlichungsplan zu. 
-            
+              .
               <br />
               <br />
   

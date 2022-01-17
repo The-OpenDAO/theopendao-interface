@@ -171,6 +171,7 @@ import { DocumentAdd, ArrowRightBold, Right } from '@element-plus/icons-vue'
             font-weight: 400;
             color: #ffffff;
             opacity: 0.6;
+            text-align: center;
           }
         }
       }
@@ -214,6 +215,9 @@ import { DocumentAdd, ArrowRightBold, Right } from '@element-plus/icons-vue'
       padding-bottom: 40px;
       a {
         padding: 40px 0 20px 0;
+      }
+      .desc{
+        text-align: center;
       }
     }
   }

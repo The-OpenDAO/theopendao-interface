@@ -49,6 +49,9 @@ function openUrl(url) {
 </script>
 
 <style lang="scss" scoped>
+html:lang(fr) .how-to-buy .left .tip span {
+  max-width: 380px;
+}
 .wrapper {
   width: 100vw;
   display: flex;
@@ -82,6 +85,7 @@ function openUrl(url) {
       padding: 40px 0;
       span {
         padding-right: 20px;
+        text-align: center;
       }
       .arrow {
         transform: rotate(-90deg);

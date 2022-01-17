@@ -314,6 +314,9 @@ async function tvlHour() {
         text-align: left;
         font-size: 20px;
       }
+      .LP-locked-title{
+        font-size: 22px;
+      }
     }
   }
 }

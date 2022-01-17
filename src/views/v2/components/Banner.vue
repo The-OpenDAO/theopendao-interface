@@ -102,9 +102,9 @@ onMounted(async () => {
           img {
             width: 55px;
             position: absolute;
-            // top: 23px;
-            top: 24%;
+            top: 50%;
             right: 31px;
+            transform: translate(0px, -50%);
           }
         }
       }
@@ -113,6 +113,9 @@ onMounted(async () => {
 }
 
 @media only screen and (max-width: 767px) {
+  // html:lang(de) .how-to-buy .left .tip span {
+  //   max-width: 380px;
+  // }
   .banner-bg {
     .bannner {
       // height: 800px;
@@ -132,13 +135,13 @@ onMounted(async () => {
             padding: 18px 0 18px 15px;
             .banner-data-title {
               font-size: 20px;
+              max-width: 230px;
             }
             .banner-data-value {
               font-size: 26px;
             }
             img {
               width: 53px;
-              top: 18px;
               right: 15px;
             }
           }

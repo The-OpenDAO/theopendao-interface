@@ -78,7 +78,7 @@ export default {
               <br />
               <br />
                 
-               La première "Proposition d'amélioration" d'OpenDAO a été adoptée avec/ Le Snapshot  </span><a href="https://snapshot.org/#/theopendao.eth/proposal/0x5d68e1e5cb016ddb79bd4f6d2b9453f2a1330415cf785b7df4e6b5cefca0889e" target="_blank">se trouve ici</a><span> . 64.36% ont accepté un calendrier d'émission linéaire d'un an.
+              La première "proposition d'amélioration" d'OpenDAO a été adoptée à 64,36%, acceptant un calendrier de publication linéaire d'un an. Vous pouvez trouver le Snapshot   </span><a href="https://snapshot.org/#/theopendao.eth/proposal/0x5d68e1e5cb016ddb79bd4f6d2b9453f2a1330415cf785b7df4e6b5cefca0889e" target="_blank"> ici</a><span> . 
               
               <br />
               <br />
