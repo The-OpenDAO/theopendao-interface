@@ -131,6 +131,12 @@
   html:lang(it) .item  {
     padding: 20px 2px!important;
   }
+  html:lang(de) .item  {
+    padding: 20px 2px!important;
+    .desc{
+      word-break: break-all;
+    }
+  }
   .chart {
     flex-direction: column-reverse;
   }
