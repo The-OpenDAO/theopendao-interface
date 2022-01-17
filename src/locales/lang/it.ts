@@ -18,6 +18,8 @@ export default {
       staking: 'Staking',
       community: 'Comunità',
       wallet: 'Portafoglio',
+      buy: 'Comprare',
+      audit: 'Audit',
       language: 'Lingua',
     },
   

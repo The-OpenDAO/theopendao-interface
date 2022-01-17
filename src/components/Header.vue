@@ -88,11 +88,11 @@
                 <span>$SOS</span>
               </template>
               <el-menu-item>
-                <a href="#how-to-buy">{{ $t('header.buy') }}</a>
+                <a href="#how-to-buy"> {{ $t('header.buy') }} </a>
               </el-menu-item>
               <el-menu-item><a target="_blank" href="https://etherscan.io/token/0x3b484b82567a09e2588A13D54D032153f0c0aEe0">Etherscan</a></el-menu-item>
               <el-menu-item>
-                <a target="_blank" href="https://www.certik.com/projects/opendao">{{ $t('header.audit') }}</a>
+                <a target="_blank" href="https://www.certik.com/projects/opendao"> {{ $t('header.audit') }} </a>
               </el-menu-item>
             </el-sub-menu>
             <el-sub-menu index="7">
