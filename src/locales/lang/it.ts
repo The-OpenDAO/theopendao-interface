@@ -18,7 +18,7 @@ export default {
       staking: 'Staking',
       community: 'Comunità',
       wallet: 'Portafoglio',
-      language: 'Language',
+      language: 'Lingua',
     },
   
     banner: {
@@ -60,7 +60,7 @@ export default {
       openDAODesc1: 'Sostieni gli artisti emergenti e il loro lavoro originale',
       openDAODesc2: 'Supporta le comunità NFT',
       openDAODesc3: "Sostieni la conservazione dell'arte",
-      openDAODesc4: 'Support our Developer Grant for participating in the $SOS ecosystem', /* warning */
+      openDAODesc4: "Sostieni il nostro Developer Grant per partecipare all'ecosistema $SOS", 
       foundingTeam: 'Squadra Fondatrice',
     },
   
@@ -103,7 +103,7 @@ export default {
       balance: 'Bilancia',
       staked: 'Staked',
       connectWallet: 'Collega il portafoglio',
-      approve: 'Approve', /*warning */
+      approve: 'Approvare',
     },
   
     farm: {
