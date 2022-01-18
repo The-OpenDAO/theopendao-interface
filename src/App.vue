@@ -68,6 +68,7 @@ import Footer from '@/components/Footer.vue'
 }
 .el-drawer__body {
   padding: unset !important;
+  overflow-y: scroll;
 }
 .el-dropdown__popper.el-popper {
   border: 1px solid #1e1f23 !important;
