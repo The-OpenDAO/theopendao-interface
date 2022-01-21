@@ -1,114 +1,114 @@
 export default {
-  name: '繁體中文',
   common: {
-    tvl: '总锁仓量',
-    apy: '年化复利',
-    bridge: '跨链桥',
-    lending: '借贷',
+    tvl: '總鎖倉量',
+    apy: '年化復利',
+    bridge: '跨鏈橋',
+    lending: '借貸',
     add: '添加',
+    selectedLang: '繁體中文',
   },
 
   header: {
     sosChain: 'SOS 鏈',
-    sosMarket: 'SOS 交易',
-    coming: '敬请期待',
-    mintstarter: '启动平台',
-    staking: '质押',
-    community: '社区',
-    wallet: '钱包',
-    buy: '购买',
-    audit: '审计',
-    language: '语言',
+    sosMarket: 'SOS 市場',
+    coming: '敬請期待',
+    mintstarter: '啟動平臺',
+    staking: '質押',
+    community: '社區',
+    wallet: '錢包',
+    buy: '購買',
+    audit: '審計',
+    language: '語言',
   },
 
   banner: {
     theOpenDAO: 'OpenDAO',
     SOS: '$SOS',
-    bannerDesc1: '一个以创作者和收藏者为核心，凝聚业内破局者的原生数字社区。',
-    bannerDesc2: '元宇宙世界的代币：为社区而生，为社区而治，为社区而享。',
-    tvt: '总交易量',
-    fdv: '完全释放后估值',
+    bannerDesc1: '一個以創作者和收藏者為核心，凝聚業內破局者的原生數字社區。',
+    bannerDesc2: '元宇宙世界的代幣：為社區而生，為社區而治，為社區而享。',
+    tvt: '總交易量',
+    fdv: '完全釋放後估值',
   },
 
   roadmap: {
-    title: '发展路线图',
+    title: '發展路線圖',
 
-    content1: '公平分配：创始团队零持有，零私募，零公募，就只有免费空投',
-    content2: 'DAO 治理优化提案：缔造 WEB3/NFT 领域最大的 DAO',
-    content3: '生态系统构建：开发者和营销基金助跑，为创作者策展',
-    content4: '启动平台：为$SOS代币提供落地应用，赋能$veSOS代币持有者',
-    content5: 'SOS交易：御用秘方料理——从未有过的实验平台（不和现有任何NFT平台存在竞争）',
-    content6: 'SOS 链：可兼容 EVM，零 GAS 费，丝滑的NFT 交易体验',
-    content7: 'SOS 链上跨链/DEX/借贷',
+    content1: '公平分配：創始團隊零持有，零私募，零公募，就只有免費空投',
+    content2: 'DAO 治理優化提案：締造 WEB3/NFT 領域最大的 DAO',
+    content3: '生態系統構建：開發者和營銷基金助跑，為創作者策展',
+    content4: '啟動平臺：為$SOS代幣提供落地應用，賦能$veSOS代幣持有者',
+    content5: 'SOS交易：禦用秘方料理——從未有過的實驗平臺（不和現有任何NFT平臺存在競爭）',
+    content6: 'SOS 鏈：可兼容 EVM，零 GAS 費，絲滑的NFT 交易體驗',
+    content7: 'SOS 鏈上跨鏈/DEX/借貸',
   },
 
   distribution: {
-    title: '代币分配',
-    desc: '$SOS 空投的起源和初心是向那些NFT创作者致敬，向那些NFT收藏者致敬，向那些孕育整个NFT生态系统的交易平台致敬。',
-    sosToken: '$SOS 代币',
-    sosTotal: '总发行量：100 万亿',
+    title: '代幣分配',
+    desc: '$SOS 空投的起源和初心是向那些NFT創作者致敬，向那些NFT收藏者致敬，向那些孕育整個NFT生態系統的交易平臺致敬。',
+    sosToken: '$SOS 代幣',
+    sosTotal: '總發行量：100 萬億',
     airdrop: '空投',
-    stakingIncentive: '质押奖励',
-    openDAOTreasury: 'OpenDAO 金库',
-    LPIncentive: 'LP 奖励',
-    analyticsTime: '数据来源于 Dune Analytics 更新到 2022年1月12日',
-    usersClaimed: '领取人数',
-    transactions: '交易总量',
-    holders: '链上持有人数',
+    stakingIncentive: '質押獎勵',
+    openDAOTreasury: 'OpenDAO 金庫',
+    LPIncentive: 'LP 獎勵',
+    analyticsTime: '數據來源於 Dune Analytics 更新到 2022年1月12日',
+    usersClaimed: '領取人數',
+    transactions: '交易總量',
+    holders: '鏈上持有人數',
     openDAO: 'OpenDAO',
-    openDAOTitle: 'OpenDAO 20% 的$SOS 代币用于：',
-    openDAODesc1: '支持新兴艺术家和他们的原创作品',
-    openDAODesc2: '支持众多 NFT 社区',
-    openDAODesc3: '支持艺术品的保存',
-    openDAODesc4: '支持我们的开发者基金去参与构建$SOS 生态系统',
-    foundingTeam: '创始团队',
+    openDAOTitle: 'OpenDAO 20% 的$SOS 代幣用於：',
+    openDAODesc1: '支持新興藝術家和他們的原創作品',
+    openDAODesc2: '支持眾多 NFT 社區',
+    openDAODesc3: '支持藝術品的保存',
+    openDAODesc4: '支持我們的開發者基金去參與構建$SOS 生態系統',
+    foundingTeam: '創始團隊',
   },
 
   howToBuy: {
-    title: '如何购买',
-    desc: '目前您可以到这些交易平台购买 $SOS。',
-    youCanBuy: '您可以来这里购买 $SOS',
+    title: '如何購買',
+    desc: '目前您可以到這些交易平臺購買 $SOS。',
+    youCanBuy: '您可以來這裏購買 $SOS',
   },
 
   stake: {
-    title: '质押奖励',
+    title: '質押獎勵',
     desc: `<span>
-            OpenDAO 20% 的$SOS 代币用于质押奖励。
+            OpenDAO 20% 的$SOS 代幣用於質押獎勵。
             <br />
             <br />
             
-            OpenDAO 第一个优化提案已经通过，64.36% 的票数同意一年线性释放方案。您可以去 </span><a href="https://snapshot.org/#/theopendao.eth/proposal/0x5d68e1e5cb016ddb79bd4f6d2b9453f2a1330415cf785b7df4e6b5cefca0889e" target="_blank">Snapshot</a><span> 查看。
+            OpenDAO 第一個優化提案已經通過，64.36% 的票數同意一年線性釋放方案。您可以去 </span><a href="https://snapshot.org/#/theopendao.eth/proposal/0x5d68e1e5cb016ddb79bd4f6d2b9453f2a1330415cf785b7df4e6b5cefca0889e" target="_blank">Snapshot</a><span> 查看。
             
             <br />
             <br />
 
-            每质押一枚 $SOS 代币，您将得到一枚 $veSOS 代币。$veSOS拥有 OpenDAO 的投票权，还拥有其他协议和项目方的空投机会和治理投票权。
+            每質押一枚 $SOS 代幣，您將得到一枚 $veSOS 代幣。$veSOS擁有 OpenDAO 的投票權，還擁有其他協議和項目方的空投機會和治理投票權。
             <br />
             <br />
-            $veSOS 会自动复利。一旦解除质押，您将收到您原始数量的$SOS，外加您从官方资金池或者其他收入来源中获得的质押奖励$SOS。
+            $veSOS 會自動復利。一旦解除質押，您將收到您原始數量的$SOS，外加您從官方資金池或者其他收入來源中獲得的質押獎勵$SOS。
           </span>`,
-    auditReport: '审计报告',
-    stakingAPR: '质押年利率',
-    stakeSOS: '质押 $SOS',
-    enterVal: '请输入数量',
+    auditReport: '審計報告',
+    stakingAPR: '質押年利率',
+    stakeSOS: '質押 $SOS',
+    enterVal: '請輸入數量',
     max: '最大',
-    stake: '质押',
-    stakeTitle: '质押',
+    stake: '質押',
+    stakeTitle: '質押',
     unStake: '解押',
     unStakeTitle: '解押',
-    stakingSOS: '质押 $SOS',
-    balance: '余额',
-    staked: '已经质押',
-    connectWallet: '连接钱包',
-    approve: '授权',
+    stakingSOS: '質押 $SOS',
+    balance: '余額',
+    staked: '已經質押',
+    connectWallet: '連接錢包',
+    approve: '授權',
   },
 
   farm: {
-    title: '流动性提供者奖励',
+    title: '流動性提供者獎勵',
     desc: `<span>
-              10% 的$SOS 代币用于流动性提供者（LP）奖励。
+              10% 的$SOS 代幣用於流動性提供者（LP）獎勵。
               <br />
-              SOS/WETH  资金池现在已经上线
+              SOS/WETH  資金池現在已經上線
             </span>
             <a target="_blank" href="https://app.sushi.com/farm">app.sushi.com/farm</a>`,
   },
@@ -117,20 +117,20 @@ export default {
     title: 'SOS 鏈',
 
     bridge: '跨鏈橋',
-    bridgeDesc: 'NFT 和数字货币的跨链桥',
+    bridgeDesc: 'NFT 和數字貨幣的跨鏈橋',
 
     dex: 'DEX',
-    dexDesc: '基于 SOS 链原生且独立的去中心化交易平台',
+    dexDesc: '基於 SOS 鏈原生且獨立的去中心化交易平臺',
 
-    lending: '放貸',
-    lendingDesc: 'NFT 和 FT 放贷协议',
+    lending: '借貸',
+    lendingDesc: 'NFT 和 FT 放貸協議',
   },
 
   partners: {
-    title: '战略合作伙伴',
+    title: '戰略合作夥伴',
   },
 
   footer: {
-    copyright: 'OpenDAO 版权所有 © 2022',
+    copyright: 'OpenDAO 版權所有 © 2022',
   },
 }

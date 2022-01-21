@@ -1,6 +1,7 @@
 import { createI18n } from 'vue-i18n'
 import en from './lang/en'
 import zh_CN from './lang/zh_CN'
+import zh_TW from './lang/zh_TW'
 import de from './lang/de'
 import it from './lang/it'
 import fr from './lang/fr'
@@ -14,6 +15,7 @@ const messages = {
   it,
   fr,
   zh_CN,
+  zh_TW,
 }
 
 export const locals = [
@@ -22,9 +24,9 @@ export const locals = [
   { name: 'Italiana', key: 'it', disabled: false },
   { name: 'Français', key: 'fr', disabled: false },
   { name: '简体中文', key: 'zh_CN', disabled: false },
+  { name: '繁體中文', key: 'zh_TW', disabled: false },
   { name: 'Español', key: '1', disabled: true },
   { name: 'русский', key: '4', disabled: true },
-  // { name: '繁體中文', key: 'zh_TW', disabled: true },
 ]
 
 // 2. Create i18n instance with options
