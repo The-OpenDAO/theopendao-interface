@@ -52,9 +52,9 @@
               <el-menu-item index="1-3" disabled>DEX</el-menu-item>
               <el-menu-item index="1-4-1" disabled>{{ $t('common.lending') }}</el-menu-item>
             </el-sub-menu>
-            <el-menu-item index="2" disabled>
+            <el-menu-item index="2">
               <el-icon><document /></el-icon>
-              <span>{{ $t('header.sosMarket') }}</span>
+              <span> <a target="_blank" href="https://www.sosmarket.io/">{{ $t('header.sosMarket') }}</a> </span>
             </el-menu-item>
             <el-menu-item index="3" disabled>
               <el-icon><document /></el-icon>

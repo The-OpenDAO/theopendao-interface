@@ -10,7 +10,7 @@ export default {
 
   header: {
     sosChain: 'SOS 链',
-    sosMarket: 'SOS 交易',
+    sosMarket: 'SOS 市场',
     coming: '敬请期待',
     mintstarter: '启动平台',
     staking: '质押',
