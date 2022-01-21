@@ -27,7 +27,7 @@ export default {
     bannerDesc1: '一個以創作者和收藏者為核心，凝聚業內破局者的原生數字社區。',
     bannerDesc2: '元宇宙世界的代幣：為社區而生，為社區而治，為社區而享。',
     tvt: '總交易量',
-    fdv: '完全釋放後估值',
+    fdv: '總市值',
   },
 
   roadmap: {

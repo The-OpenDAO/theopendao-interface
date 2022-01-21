@@ -5,6 +5,12 @@ import zh_TW from './lang/zh_TW'
 import de from './lang/de'
 import it from './lang/it'
 import fr from './lang/fr'
+
+import rs from './lang/rs'
+import thai from './lang/thai'
+import tk from './lang/tk'
+import ro from './lang/ro'
+import es from './lang/es'
 import { computed } from 'vue'
 
 // document https://vue-i18n.intlify.dev/
@@ -14,6 +20,11 @@ const messages = {
   de,
   it,
   fr,
+  ro,
+  rs,
+  thai,
+  tk,
+  es,
   zh_CN,
   zh_TW,
 }
@@ -25,8 +36,11 @@ export const locals = [
   { name: 'Français', key: 'fr', disabled: false },
   { name: '简体中文', key: 'zh_CN', disabled: false },
   { name: '繁體中文', key: 'zh_TW', disabled: false },
-  { name: 'Español', key: '1', disabled: true },
-  { name: 'русский', key: '4', disabled: true },
+  { name: 'Russian', key: 'rs', disabled: false },
+  { name: 'Thai', key: 'thai', disabled: false },
+  { name: 'Turkish', key: 'tk', disabled: false },
+  { name: 'Romanian', key: 'ro', disabled: false },
+  { name: 'Español', key: 'es', disabled: false },
 ]
 
 // 2. Create i18n instance with options

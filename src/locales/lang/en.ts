@@ -18,9 +18,9 @@ export default {
     staking: 'Staking',
     community: 'Community',
     wallet: 'Wallet',
-    buy: 'Buy',
-    audit: 'Audit',
-    language: 'Language',
+    buy: 'Buy',/* Buy in diff langs */
+    audit: 'Audit',/* Audit in diff langs */
+    language: 'Language',/* Language in diff langs */
   },
 
   banner: {
@@ -106,7 +106,7 @@ export default {
     balance: 'Balance',
     staked: 'Staked',
     connectWallet: 'Connect Wallet',
-    approve: 'Approve',
+    approve: 'Approve',/* Approve in diff langs */
   },
 
   farm: {
