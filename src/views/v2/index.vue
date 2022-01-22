@@ -3,11 +3,12 @@
   <Roadmap />
   <Distribution />
   <HowToBuy />
- <!-- <DataBoard />-->
+  <!-- <DataBoard />-->
   <Staking />
   <Farm />
   <SosChainNetwork />
   <Partners />
+  <Footer />
 </template>
 
 <script setup lang="ts">
@@ -20,6 +21,7 @@ import Staking from './components/Staking.vue'
 import Farm from './components/Farm.vue'
 import SosChainNetwork from './components/SosChainNetwork.vue'
 import Partners from './components/Partners/index.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <style lang="scss"></style>

@@ -17,3 +17,10 @@ export async function getTotalVolume() {
   })
   return parseInt(totalVolume)
 }
+
+export async function getMembershipProofAPI(address: string) {
+  address = address.toLowerCase()
+  const fileName = address.substring(0, 4)
+  const res = await axios.get(`${location.origin}/membership/${fileName}.json`)
+  return res.data[address] || {}
+}
