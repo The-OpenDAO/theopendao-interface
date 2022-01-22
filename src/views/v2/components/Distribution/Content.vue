@@ -136,6 +136,8 @@ import { DocumentAdd, ArrowRightBold, Right } from '@element-plus/icons-vue'
           font-size: 14px;
           font-weight: 400;
           opacity: 0.6;
+          text-align: center;
+
         }
       }
       .item-main-1 {
@@ -215,6 +217,9 @@ import { DocumentAdd, ArrowRightBold, Right } from '@element-plus/icons-vue'
       padding-bottom: 40px;
       a {
         padding: 40px 0 20px 0;
+      }
+      .item-title {
+        text-align: center;
       }
       .desc{
         text-align: center;

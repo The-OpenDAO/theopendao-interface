@@ -152,6 +152,7 @@ html:lang(fr) .how-to-buy .left .tip span {
         font-size: 30px;
         span {
           padding-bottom: 20px;
+          padding-right: unset;
         }
         .arrow {
           transform: rotate(0deg);

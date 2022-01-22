@@ -9,6 +9,7 @@
     "preview": "vite build && vite preview"
   },
   "dependencies": {
+    "@clover-network/clover-connector": "^1.0.0",
     "axios": "^0.24.0",
     "bitski": "^0.11.0-beta.6",
     "echarts": "^5.2.2",

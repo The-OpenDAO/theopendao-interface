@@ -5,12 +5,16 @@ import WalletConnectIcon from './logos/WalletConnect.vue'
 import MetaMaskIcon from './logos/MetaMask.vue'
 import WalletLinkIcon from './logos/WalletLink.vue'
 import BitskiIcon from './logos/Bitski.vue'
+import CloverIcon from './logos/Clover.vue'
 import { useBoard } from '../composables/useBoard'
 import { useWallet, WalletName } from '../composables/useWallet'
 import { Metamask } from '../wallets/metamask'
 import { Walletconnect } from '../wallets/walletconnect'
 import { Walletlink } from '../wallets/walletlink'
 import { Bitski } from 'bitski'
+import { CloverConnector } from '@clover-network/clover-connector'
+const clover = new CloverConnector({ supportedChainIds: [1] })
+
 import Web3 from 'web3'
 const opts = {
   clientId: '8a3708b0-73e0-46ab-b5c4-b50e4167d013',
@@ -29,6 +33,7 @@ export default defineComponent({
     WalletConnectIcon,
     WalletLinkIcon,
     BitskiIcon,
+    CloverIcon,
   },
   inject: ['infuraId'],
   setup() {
@@ -81,6 +86,9 @@ export default defineComponent({
           case 'bitski':
             await connectBitski()
             break
+          case 'clover':
+            await connectClover()
+            break
         }
       } catch (e: any) {
         console.error(e.message)
@@ -119,7 +127,11 @@ export default defineComponent({
       console.log('trigger bitski')
       await connect('bitski')
     }
-
+    const connectClover = async () => {
+      close()
+      openLoading()
+      await connect('clover')
+    }
     return {
       status,
       boardOpen,
@@ -171,6 +183,12 @@ export default defineComponent({
         <div class="item">
           <div class="wallet-name">Bitski Wallet</div>
           <BitskiIcon class="logo" />
+        </div>
+      </div>
+      <div @click="connectWallet('clover')" class="wallet-item">
+        <div class="item">
+          <div class="wallet-name">Clover Wallet</div>
+          <CloverIcon class="logo" />
         </div>
       </div>
     </div>

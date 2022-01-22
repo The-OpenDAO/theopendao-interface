@@ -13,14 +13,16 @@ import {
 import { useEthers } from './useEthers'
 import { BitskiConnect, BitskiProvider } from '../wallets/bitski'
 
+import {CloverProvider,CloverConnect} from '../wallets/clover'
 
 export type WalletProvider =
   | MetaMaskProvider
   | WalletConnectProvider
   | WalletLinkProvider
   | BitskiProvider
+  | CloverProvider
 export type ConnectionState = 'none' | 'connecting' | 'connected'
-export type WalletName = 'none' | 'metamask' | 'walletconnect' | 'walletlink' | 'bitski'
+export type WalletName = 'none' | 'metamask' | 'walletconnect' | 'walletlink' | 'bitski' | 'clover'
 export type OnConnectedCallback = (provider: WalletProvider) => void
 export type OnDisconnectCallback = (msg: string) => void
 export type OnAccountsChangedCallback = (accounts: string[]) => void
@@ -101,10 +103,11 @@ export function useWallet(options: UseWalletOptions = { library: 'ethers' || 'we
             throw new Error('walletlink is not connected')
           break
           case 'bitski':
-            console.log("connect");
-
             _provider = (await BitskiConnect.connect()) as BitskiProvider;
-            
+            break
+          case 'clover':
+            console.log("connect",CloverProvider);
+            _provider = (await CloverConnect.connect()) as CloverProvider;
             break
         default:
           throw new Error('Connect Error: wallet name not found')
@@ -197,6 +200,18 @@ export function useWallet(options: UseWalletOptions = { library: 'ethers' || 'we
            },
           )
           break
+        case 'clover':
+          console.log(CloverProvider);
+          
+          ;(provider.value as CloverProvider).on(
+            'disconnect',
+            () => {
+              clear()
+              onDisconnectCallback.value &&
+                onDisconnectCallback.value('Error Messages')
+            },
+          )
+          break
     }
   }
 
@@ -264,6 +279,21 @@ export function useWallet(options: UseWalletOptions = { library: 'ethers' || 'we
             }
           },
        )
+        break
+      case 'clover':
+        ;(provider.value as CloverProvider).on(
+          'accountsChanged',
+          async (accounts: string[]) => {
+            try {
+              options.library === 'web3' &&
+                (await activate(provider.value as WalletProvider))
+              onAccountsChangedCallback.value 
+            } catch (err: any) {
+              error.value = `Failed when changing account: ${err.message}`
+              return
+            }
+          },
+        )
         break
     }
   }
@@ -340,6 +370,29 @@ export function useWallet(options: UseWalletOptions = { library: 'ethers' || 'we
         break
       case 'bitski':
         ;(provider.value as BitskiProvider).on(
+        'chainChanged',
+          async (hexChainId: string) => {
+            // Changing network might lead to disconnect so the provider would be deleted.
+            if (!provider.value) {
+              error.value = `Failed when changing chain: missing provider`
+              return
+            }
+
+            try {
+              const chainId = parseInt(hexChainId, 16)
+              options.library === 'web3' &&
+                (await activate(provider.value as WalletProvider))
+              onChainChangedCallback.value &&
+                onChainChangedCallback.value(chainId)
+            } catch (err: any) {
+              error.value = `Failed when changing chain: ${err.message}`
+              return
+            }
+          },
+        )
+        break
+      case 'clover':
+        ;(provider.value as CloverProvider).on(
         'chainChanged',
           async (hexChainId: string) => {
             // Changing network might lead to disconnect so the provider would be deleted.

@@ -74,7 +74,7 @@ function changeNetworks() {
 </template>
 <style lang="scss" scoped>
 $themeColor: #00c38bff;
-html:lang(fr) .connect, html:lang(it) .connect  {
+html:lang(fr) .connect, html:lang(it) .connect , html:lang(thai) .connect, html:lang(rs) .connect   {
   img{
     left: 28px!important;
   }

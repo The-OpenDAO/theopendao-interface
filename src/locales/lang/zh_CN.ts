@@ -27,7 +27,7 @@ export default {
     bannerDesc1: '一个以创作者和收藏者为核心，凝聚业内破局者的原生数字社区。',
     bannerDesc2: '元宇宙世界的代币：为社区而生，为社区而治，为社区而享。',
     tvt: '总交易量',
-    fdv: '完全释放后估值',
+    fdv: '总市值',
   },
 
   roadmap: {

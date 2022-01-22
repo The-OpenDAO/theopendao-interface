@@ -128,6 +128,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+  html:lang(rs) .chart .left .item .desc{
+    word-break: break-all;
+    margin: 0 3px;
+  }
   html:lang(it) .item  {
     padding: 20px 2px!important;
   }

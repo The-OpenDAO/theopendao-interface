@@ -113,6 +113,18 @@ onMounted(async () => {
 }
 
 @media only screen and (max-width: 767px) {
+   html:lang(rs) .banner-bg .bannner .banner-box .banner-data .banner-data-box,
+   html:lang(thai) .banner-bg .bannner .banner-box .banner-data .banner-data-box,
+   html:lang(ro) .banner-bg .bannner .banner-box .banner-data .banner-data-box,
+   html:lang(es) .banner-bg .bannner .banner-box .banner-data .banner-data-box{
+     height: unset;
+     min-height: 90px;
+    .banner-data-title   {
+            word-break: break-all;
+            max-width: 200px;
+      }
+   } 
+
   // html:lang(de) .how-to-buy .left .tip span {
   //   max-width: 380px;
   // }

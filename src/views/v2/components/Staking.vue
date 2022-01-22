@@ -591,11 +591,15 @@ function SOSperUSD() {
 }
 
 @media only screen and (max-width: 767px) {
+  html:lang(ro) .staking .stake-from .left .input input{
+    font-size: 18px;
+  }
   .staking {
     .stake-from {
       flex-direction: column-reverse;
       .left {
         padding: 20px;
+
         .price {
           padding: 20px 0;
           .label {
