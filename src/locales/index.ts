@@ -23,7 +23,8 @@ const messages = {
   ro,
   rs,
   thai,
-  tk,
+  tk
+  ,
   es,
   zh_CN,
   zh_TW,
