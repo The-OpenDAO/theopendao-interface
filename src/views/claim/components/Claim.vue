@@ -52,6 +52,8 @@
         <img src="@/assets/images/claim/l.png" alt="" />
         <el-button v-if="!address" class="claim-btn claimed" @click="open">Connect Wallet</el-button>
         <el-button v-else-if="data.claimed" class="claim-btn claimed" disabled>CLAIMED</el-button>
+        <el-button v-else-if="claimStatus == 'NOT START'" class="claim-btn claimed" disabled>NOT START</el-button>
+        <el-button v-else-if="claimStatus == 'CLAIM END'" class="claim-btn claimed" disabled>CLAIM END</el-button>
         <el-button v-else class="claim-btn" @click="claim">CLAIM</el-button>
         <img src="@/assets/images/claim/r.png" alt="" />
       </template>
@@ -88,6 +90,17 @@ const data = reactive({
   proofs: [1],
   claimed: false,
   claimEndTime: 0,
+})
+
+const claimStatus = computed(() => {
+  const date = new Date()
+  if (Number(data.claimEndTime) == 0) {
+    return 'NOT START'
+  } else if (date.getTime() / 1000 < Number(data.claimEndTime)) {
+    return 'START'
+  } else {
+    return 'CLAIM END'
+  }
 })
 
 function showMinedNotification(hash) {
