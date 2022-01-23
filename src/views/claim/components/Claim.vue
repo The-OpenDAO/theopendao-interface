@@ -136,13 +136,23 @@ async function getClaimEndTime() {
 
 async function claim() {
   if (!data.proofs) return
-  if (+new Date() / 1000 > data.claimEndTime) return showMessage()
-  const NFTContract = getOpenDAOMembershipNFTContract()
-  const tx = await NFTContract.claimMembershipNFTs(data.tier, data.proofs)
-  submittedModal.value.open(tx.hash)
-  await tx.wait(1)
-  showMinedNotification(tx.hash)
-  getClaimStatus()
+  // const date = new Date()
+  // if (date.getTime() / 1000 > data.claimEndTime) return showMessage()
+  try {
+    const NFTContract = getOpenDAOMembershipNFTContract()
+    const tx = await NFTContract.claimMembershipNFTs(data.tier, data.proofs)
+    submittedModal.value.open(tx.hash)
+    await tx.wait(1)
+    showMinedNotification(tx.hash)
+    getClaimStatus()
+  } catch (err) {
+    ElNotification({
+      // duration: 1000000000,
+      type: 'error',
+      title: 'Claim error',
+      // message: h('a', { href: `${etherscanBaseURL}/tx/${hash}`, style: 'color: #00c38b', target: '_blank' }, 'View on Etherscan'),
+    })
+  }
 }
 
 const showMessage = () => {

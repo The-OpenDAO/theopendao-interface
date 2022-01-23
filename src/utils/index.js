@@ -111,3 +111,17 @@ export async function AddTokenToMetamask(token) {
 export function formatNumber(num) {
   return `${num}`.replace(/(\d)(?=(\d{3})+\b)/g, '$1,')
 }
+
+export function goAnchor(selector) {
+  let top = 0
+
+  const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+
+  if (typeof selector === 'number') {
+    top = selector - scrollTop
+  } else {
+    const anchor = document.querySelector(selector) || { offsetTop: 0 }
+    top = anchor.offsetTop - scrollTop
+  }
+  window.scrollBy({ top, behavior: 'smooth' })
+}

@@ -2,7 +2,7 @@
   <header class="header-wrapper hide-mobile header-pc">
     <div class="bg" :style="{ opacity: header.opacity }"></div>
     <div class="header">
-      <a class="logo" href="#sos">
+      <a class="logo" @click="goAnchor('#sos')">
         <Logo class="logo-style" />
         <span>SOS</span>
       </a>
@@ -54,14 +54,16 @@
             </el-sub-menu>
             <el-menu-item index="2">
               <el-icon><document /></el-icon>
-              <span> <a target="_blank" href="https://www.sosmarket.io/">{{ $t('header.sosMarket') }}</a> </span>
+              <span>
+                <a target="_blank" href="https://www.sosmarket.io/">{{ $t('header.sosMarket') }}</a>
+              </span>
             </el-menu-item>
             <el-menu-item index="3" disabled>
               <el-icon><document /></el-icon>
               <span>{{ $t('header.mintstarter') }}</span>
             </el-menu-item>
             <el-menu-item index="4">
-              <a href="#staking">
+              <a @click="goAnchor('#staking')">
                 <el-icon><document /></el-icon>
                 <span>{{ $t('header.staking') }}</span>
               </a>
@@ -88,11 +90,11 @@
                 <span>$SOS</span>
               </template>
               <el-menu-item>
-                <a href="#how-to-buy"> {{ $t('header.buy') }} </a>
+                <a @click="goAnchor('#how-to-buy')">{{ $t('header.buy') }}</a>
               </el-menu-item>
               <el-menu-item><a target="_blank" href="https://etherscan.io/token/0x3b484b82567a09e2588A13D54D032153f0c0aEe0">Etherscan</a></el-menu-item>
               <el-menu-item>
-                <a target="_blank" href="https://www.certik.com/projects/opendao"> {{ $t('header.audit') }} </a>
+                <a target="_blank" href="https://www.certik.com/projects/opendao">{{ $t('header.audit') }}</a>
               </el-menu-item>
             </el-sub-menu>
             <el-sub-menu index="7">
@@ -100,7 +102,7 @@
                 <el-icon><location /></el-icon>
                 <span>{{ $t('header.language') }}</span>
               </template>
-              <el-menu-item v-for="(item, index) in locals" :disabled="item.disabled" @click="setI18nLanguage(item.key)">{{item.name}}</el-menu-item>
+              <el-menu-item v-for="(item, index) in locals" :disabled="item.disabled" @click="setI18nLanguage(item.key)">{{ item.name }}</el-menu-item>
             </el-sub-menu>
           </el-menu>
         </el-col>
@@ -112,6 +114,7 @@
 <script setup lang="ts" scoped>
 import { onMounted, computed, reactive, ref, watch } from 'vue'
 import { setI18nLanguage, locals, currentLocal } from '@/locales/index'
+import { goAnchor } from '@/utils/index'
 const header = reactive({
   draw: false,
   opacity: 0,
