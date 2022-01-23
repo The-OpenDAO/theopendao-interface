@@ -5,43 +5,44 @@
       <div class="left">
         <img class="title" src="@/assets/images/claim/title.png" alt="" />
         <div class="desc">
+          <p>Energy is neither destroyed or created, it is passed from one form to another.</p>
+          <p>The amount of kinetic energy that has burst forth from the OpenDAO has been incredible. The diverse NFT community remains dormant no longer.</p>
           <p>
-            The amount of kinetic energy that has burst forth from the OpenDAO genesis has been incredible. The diverse NFT community remains dormant no longer. The OpenDAO has
-            grown at a remarkably fast rate, and the contributions of its members will breathe new life into the otherwise speculative and energy-consuming NFT market. We are
-            working together to improve the NFT experience for creators, collectors, traders, investors, veterans, and beginners. As we focus on the bright future that we are
-            creating through assembling the building blocks of a strong and vibrant system, we want to reward the members of the community who have already begun to take part in
-            helping to lay its foundation.
+            We are working together to improve the NFT experience for creators, collectors, traders, investors, veterans, and beginners. As we focus on the bright future that we
+            are creating through assembling the building blocks of a strong and vibrant system, we want to reward the members of the community who have already begun to take part
+            in helping to lay its foundation.
           </p>
-          <p>The OpenDAO Genesis Membership NFT are tokens exclusively mintable by the $veSOS holders based on the snapshot taken at 10pm GMT (UTC +8) 18th Jan 2022.</p>
-          <p>Holding this token may entitle the owner access to airdrops, early access to future collections, early access to curated drops and various other benefits.</p>
+          <p>The OpenDAO Genesis Membership NFT Collection are tokens exclusively mintable by the $veSOS holders based on the snapshot taken at 10pm GMT (UTC +8) 18th Jan 2022.</p>
         </div>
       </div>
 
       <!-- right -->
       <div class="right">
-        <div class="title">As an affirmation of $SOS believers, there are 4 tiers of membership NFTs:</div>
-        <div class="tips">*Additional perks may apply to holders with a complete collection of all 4 NFTs.</div>
+        <div class="desc">
+          Holding this token may entitle the owner access to airdrops, early access to future collections, early access to curated drops and various other benefits.
+        </div>
         <div class="list">
           <div class="item">
-            <div class="tier">TIER 4</div>
-            <div class="tier-info">Held more than 30,121,665.35 veSOS at snapshot, mint 1x tier 4</div>
-          </div>
-          <div class="item">
-            <div class="tier">TIER 3</div>
-            <div class="tier-info">Held more than 94,020,331.41 veSOS at snapshot, mint 1x for tier 3 & 4</div>
+            <div class="tier">TIER 1</div>
+            <div class="tier-info">Threshold: 1,032,988,950.25 Mint 1x for 4 NFTs</div>
           </div>
           <div class="item">
             <div class="tier">TIER 2</div>
-            <div class="tier-info">Held more than 302,869,313.5 veSOS at snapshot, mint 1x for tier 2, 3 & 4</div>
+            <div class="tier-info">Threshold: 289,659,300.25 Mint 1x for tier 2,3&4 NFTs</div>
           </div>
           <div class="item">
-            <div class="tier">TIER 1</div>
-            <div class="tier-info">Held more than 638,056,875.1 veSOS at snapshot, mint 1x for all 4 NFTs</div>
+            <div class="tier">TIER 3</div>
+            <div class="tier-info">Threshold: 87,818,017.09 Mint 1x for tier 3&4 NFTs</div>
+          </div>
+          <div class="item">
+            <div class="tier">TIER 4</div>
+            <div class="tier-info">Threshold: 27,303,297.03 Mint 1x for tier 4 NFT</div>
           </div>
         </div>
+        <div class="tips">*Additional perks may apply to holders with a complete collection of all 4 NFTs.</div>
         <p class="desc">
-          Together, we are creating a robust ecosystem, composed of many dynamic parts, that will help to secure the future of NFTs in a self-sustaining way. This monumental effort
-          made by many is the beating heart and welcoming soul of OpenDAO. This powerful movement is what you, the genesis stakers, are investing in. What innovations and wonders
+          Together, we are creating a robust ecosystem composed of many dynamic parts that will help to secure the future of NFTs in a self-sustaining way. This monumental effort
+          made by many is the beating heart and welcoming soul of OpenDAO. This powerful movement is what you — the genesis stakers — are investing in. What innovations and wonders
           will we create next?
         </p>
       </div>
@@ -49,13 +50,13 @@
     <div class="claim-feild">
       <div v-if="!data.proofs" style="color: #f56c6c">You are not eligible to claim SOS Genesis Membership NFTs.</div>
       <template v-else>
-        <img src="@/assets/images/claim/l.png" alt="" />
+        <img src="@/assets/images/claim/l.png" class="hide-mobile" alt="" />
         <el-button v-if="!address" class="claim-btn claimed" @click="open">Connect Wallet</el-button>
         <el-button v-else-if="data.claimed" class="claim-btn claimed" disabled>CLAIMED</el-button>
         <el-button v-else-if="claimStatus == 'NOT START'" class="claim-btn claimed" disabled>NOT START</el-button>
         <el-button v-else-if="claimStatus == 'CLAIM END'" class="claim-btn claimed" disabled>CLAIM END</el-button>
         <el-button v-else class="claim-btn" @click="claim">CLAIM</el-button>
-        <img src="@/assets/images/claim/r.png" alt="" />
+        <img src="@/assets/images/claim/r.png" class="hide-mobile" alt="" />
       </template>
     </div>
   </section>
@@ -194,7 +195,7 @@ const showMessage = () => {
       flex: 1;
       padding: 30px;
       .title {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
       }
     }
     .right {
@@ -212,9 +213,10 @@ const showMessage = () => {
         font-weight: 400;
         color: #c83f55;
         line-height: 27px;
+        padding-bottom: 20px;
       }
       .list {
-        padding: 30px 0;
+        padding: 20px 0;
         .item {
           .tier {
             width: 80px;
@@ -276,15 +278,7 @@ const showMessage = () => {
         width: 20vw;
       }
       .claim-btn {
-        width: 30vw;
-        height: 40px;
-        background: #006eff;
-        border-radius: 20px;
-        line-height: 20px;
-        color: #fff;
-        border: none;
-        font-size: 26px;
-        font-weight: bold;
+        width: 60vw;
       }
     }
   }
