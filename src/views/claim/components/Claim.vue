@@ -52,6 +52,7 @@
       <template v-else>
         <img src="@/assets/images/claim/l.png" class="hide-mobile" alt="" />
         <el-button v-if="!address" class="claim-btn claimed" @click="open">Connect Wallet</el-button>
+        <el-button v-else-if="network.chainId != chainID" class="claim-btn claimed">NETWORK ERROR</el-button>
         <el-button v-else-if="data.claimed" class="claim-btn claimed" disabled>CLAIMED</el-button>
         <el-button v-else-if="claimStatus == 'NOT START'" class="claim-btn claimed" disabled>NOT START</el-button>
         <el-button v-else-if="claimStatus == 'CLAIM END'" class="claim-btn claimed" disabled>CLAIM END</el-button>
@@ -74,10 +75,12 @@ import SubmittedModal from '@/components/SubmittedModal.vue'
 import { ElNotification, ElMessageBox, ElMessage } from 'element-plus'
 import { getMembershipProofAPI } from '@/api/index'
 
+const chainID = import.meta.env.VITE_APP_CHAIN_ID
+
 const { open } = useBoard()
 
 const { signer } = useEthers()
-const { address, balance, isActivated } = useEthers()
+const { address, balance, isActivated, network } = useEthers()
 const { onActivated, onDeactivated, onChanged } = useEthersHooks()
 
 const etherscanBaseURL = import.meta.env.VITE_APP_ETHERSCAN_BASEURL
