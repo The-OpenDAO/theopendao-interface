@@ -78,7 +78,7 @@
               <el-menu-item><a target="_blank" href="https://snapshot.org/#/theopendao.eth">Snapshot</a></el-menu-item>
               <el-menu-item><a target="_blank" href="https://discord.gg/opendao">Discord</a></el-menu-item>
               <el-menu-item><a target="_blank" href="https://twitter.com/The_OpenDAO">Twitter</a></el-menu-item>
-              <!-- <el-menu-item><a target="_blank" href="https://www.facebook.com/TheOpenDAO/">Facebook</a></el-menu-item> -->
+              <el-menu-item><a target="_blank" href="https://t.me/theopendao_official">Telegram</a></el-menu-item>
               <!-- <el-menu-item><a target="_blank" href="https://www.instagram.com/the_opendao/ ">Instagram</a></el-menu-item> -->
               <!-- <el-menu-item><a target="_blank" href="https://www.tiktok.com/@theopendao">TikTok</a></el-menu-item> -->
               <!-- <el-menu-item><a target="_blank" href="https://www.twitch.tv/theopendao">Twitch</a></el-menu-item> -->

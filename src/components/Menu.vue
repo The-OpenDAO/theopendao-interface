@@ -41,6 +41,7 @@
           <el-dropdown-item divided><a target="_blank" href="https://snapshot.org/#/theopendao.eth">Snapshot</a></el-dropdown-item>
           <el-dropdown-item divided><a target="_blank" href="https://discord.gg/opendao">Discord</a></el-dropdown-item>
           <el-dropdown-item divided><a target="_blank" href="https://twitter.com/The_OpenDAO">Twitter</a></el-dropdown-item>
+          <el-dropdown-item divided><a target="_blank" href="https://t.me/theopendao_official">Telegram</a></el-dropdown-item>
         </el-dropdown-menu>
       </template>
     </el-dropdown>
