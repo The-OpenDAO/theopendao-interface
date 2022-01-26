@@ -18,9 +18,9 @@ export default {
       staking: 'ステーキング',
       community: 'コミュニティ',
       wallet: '財布',
-      buy: 'Buy',/* Buy in diff langs */
-      audit: 'Audit',/* Audit in diff langs */
-      language: 'Language',/* Language in diff langs */
+      buy: '購入',/* Buy in diff langs */
+      audit: '監査',/* Audit in diff langs */
+      language: '言語',/* Language in diff langs */
     },
   
     banner: {
@@ -104,7 +104,7 @@ export default {
       balance: 'バランス',
       staked: 'ステーク',
       connectWallet: '財布を結ぶ',
-      approve: 'Approve',/* Approve in diff langs */
+      approve: '承認',/* Approve in diff langs */
     },
   
     farm: {
