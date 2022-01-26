@@ -112,6 +112,9 @@ const data = reactive({
 </script>
 
 <style lang="scss">
+html:lang(jp) .dropdwon-style{
+  margin: 0 18px;
+}
 .dropdwon-style {
   margin: 0 25px;
   display: inline-block;
