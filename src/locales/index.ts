@@ -11,6 +11,7 @@ import thai from './lang/thai'
 import tk from './lang/tk'
 import ro from './lang/ro'
 import es from './lang/es'
+import jp from './lang/jp'
 import { computed } from 'vue'
 
 // document https://vue-i18n.intlify.dev/
@@ -23,8 +24,8 @@ const messages = {
   ro,
   rs,
   thai,
-  tk
-  ,
+  tk,
+  jp,
   es,
   zh_CN,
   zh_TW,
@@ -42,6 +43,7 @@ export const locals = [
   { name: 'Turkish', key: 'tk', disabled: false },
   { name: 'Romanian', key: 'ro', disabled: false },
   { name: 'Español', key: 'es', disabled: false },
+  { name: '日本語', key: 'jp', disabled: false },
 ]
 
 // 2. Create i18n instance with options
