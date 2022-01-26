@@ -39,7 +39,10 @@ const list = [
     name: 'forum',
     url: 'https://forum.theopendao.com',
   },
-
+  {
+    name: 'telegram',
+    url: 'https://t.me/theopendao_official',
+  },
   {
     name: 'etherscan',
     url: 'https://etherscan.io/token/0x3b484b82567a09e2588A13D54D032153f0c0aEe0',
@@ -109,9 +112,9 @@ const list = [
       padding-bottom: 20px;
       flex-wrap: wrap;
       div {
-        // width: 20%;
+        width: 25%;
         display: flex;
-        padding: 0 10px;
+        padding: 5px 10px;
         align-items: center;
         justify-content: center;
         padding-right: 0;
