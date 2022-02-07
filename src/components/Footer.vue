@@ -20,6 +20,10 @@ function getImageUrl(name) {
 
 const list = [
   {
+    name: 'opensea',
+    url: 'https://opensea.io/collection/opendao-genesis-membership',
+  },
+  {
     name: 'twitter',
     url: 'https://twitter.com/The_OpenDAO',
   },
@@ -112,7 +116,7 @@ const list = [
       padding-bottom: 20px;
       flex-wrap: wrap;
       div {
-        width: 25%;
+        width: 20%;
         display: flex;
         padding: 5px 10px;
         align-items: center;

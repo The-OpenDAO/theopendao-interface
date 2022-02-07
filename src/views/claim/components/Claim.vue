@@ -12,7 +12,7 @@
             are creating through assembling the building blocks of a strong and vibrant system, we want to reward the members of the community who have already begun to take part
             in helping to lay its foundation.
           </p>
-          <p>The OpenDAO Genesis Membership NFT Collection are tokens exclusively mintable by the $veSOS holders based on the snapshot taken at 10pm GMT (UTC +8) 18th Jan 2022.</p>
+          <p>The OpenDAO Genesis Membership NFT Collection are tokens exclusively mintable by the LP providers on Sushi based on the snapshot taken at block 14152105(11:00 AM UTC 6th Feb 2022).</p>
         </div>
       </div>
 
@@ -24,19 +24,19 @@
         <div class="list">
           <div class="item">
             <div class="tier">TIER 1</div>
-            <div class="tier-info">Threshold: 1,032,988,950.25 Mint 1x for 4 NFTs</div>
+            <div class="tier-info">Threshold: 1200.07 (SOS-WETH)SLP Mint 1x for 4 NFTs</div>
           </div>
           <div class="item">
             <div class="tier">TIER 2</div>
-            <div class="tier-info">Threshold: 289,659,300.25 Mint 1x for tier 2,3&4 NFTs</div>
+            <div class="tier-info">Threshold: 330.63 (SOS-WETH)SLP Mint 1x for tier 2,3&4 NFTs</div>
           </div>
           <div class="item">
             <div class="tier">TIER 3</div>
-            <div class="tier-info">Threshold: 87,818,017.09 Mint 1x for tier 3&4 NFTs</div>
+            <div class="tier-info">Threshold: 96.74 (SOS-WETH)SLP Mint 1x for tier 3&4 NFTs</div>
           </div>
           <div class="item">
             <div class="tier">TIER 4</div>
-            <div class="tier-info">Threshold: 27,303,297.03 Mint 1x for tier 4 NFT</div>
+            <div class="tier-info">Threshold: 31.18 (SOS-WETH)SLP Mint 1x for tier 4 NFT</div>
           </div>
         </div>
         <div class="tips">*Additional perks may apply to holders with a complete collection of all 4 NFTs.</div>
