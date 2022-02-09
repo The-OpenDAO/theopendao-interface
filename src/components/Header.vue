@@ -58,9 +58,9 @@
                 <a target="_blank" href="https://www.sosmarket.io/">{{ $t('header.sosMarket') }}</a>
               </span>
             </el-menu-item>
-            <el-menu-item index="3" disabled>
+            <el-menu-item index="3">
               <el-icon><document /></el-icon>
-              <span>{{ $t('header.mintstarter') }}</span>
+              <span><a target="_blank" href="https://www.721.com/">721Starter</a></span>
             </el-menu-item>
             <el-menu-item index="4">
               <a @click="goAnchor('#staking')">

@@ -4,8 +4,8 @@ export function getImageUrl(name) {
 
 export const list = [
   {
-    img: '2.png',
-    url: 'https://x.xyz/',
+    img: 'chain.svg',
+    url: 'https://chain.link/',
   },
   {
     img: '4.png',

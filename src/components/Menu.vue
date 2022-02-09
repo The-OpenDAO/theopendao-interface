@@ -17,10 +17,12 @@
         <a target="_blank" href="https://www.sosmarket.io/">{{ $t('header.sosMarket') }}</a>
       </span>
     </div>
-    <div class="dropdwon-style drop-dsiable">
-      <span class="el-dropdown-link">{{ $t('header.mintstarter') }}</span>
-      <br />
-      <span class="coming-soon">{{ $t('header.coming') }}</span>
+    <div class="dropdwon-style">
+      <span class="el-dropdown-link">
+        <a target="_blank" href="https://www.721.com/">721Starter</a>
+      </span>
+      <!-- <br />
+      <span class="coming-soon">{{ $t('header.coming') }}</span> -->
     </div>
 
     <div class="dropdwon-style">
