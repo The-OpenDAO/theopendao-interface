@@ -7,6 +7,7 @@ export default {
       dex: 'DEX',
       lending: 'Lending',
       add: 'ekle',
+      membership: 'Üyelik',
       selectedLang:"Turkish"
     },
   
@@ -71,7 +72,10 @@ export default {
       desc: "Şu anda aşağıdaki borsalarda ve DEX'lerde $SOS satın alabilirsiniz.",
       youCanBuy: '$SOS satın alabilirsiniz',
     },
-  
+    multi: {
+      title: 'Çoklu İmzacılar',
+      button: 'OYLAMA SONUÇLARINI GÖRÜNTÜLE',
+    },
     stake: {
       title: 'Stake Teşviki',
       desc: `<span>

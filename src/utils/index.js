@@ -112,16 +112,34 @@ export function formatNumber(num) {
   return `${num}`.replace(/(\d)(?=(\d{3})+\b)/g, '$1,')
 }
 
-export function goAnchor(selector) {
-  let top = 0
+import router from '../router'
 
-  const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+export function goAnchor(selector,pageName) {
+  // if(pageName != 'membership'){
+    router.push({path:'/'})
+    
+  // }
+  setTimeout( ()=>{
+    jump(pageName)
 
-  if (typeof selector === 'number') {
-    top = selector - scrollTop
-  } else {
-    const anchor = document.querySelector(selector) || { offsetTop: 0 }
-    top = anchor.offsetTop - scrollTop
-  }
-  window.scrollBy({ top, behavior: 'smooth' })
+
+    // let top = 0
+    // const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+  
+    // if (typeof selector === 'number') {
+    //   top = selector - scrollTop
+    // } else {
+    //   const anchor = document.querySelector(selector) || { offsetTop: 0 }
+    //   top = anchor.offsetTop - scrollTop
+    // }
+    // window.scrollBy({ top, behavior: 'smooth' })
+
+  }, 300 )
+
 }
+
+const jump = function(id){
+  document.getElementById(id).scrollIntoView(
+      { block: 'start', behavior: 'smooth' }
+      )
+  }

@@ -7,6 +7,7 @@ export default {
       dex: 'DEX',
       lending: '대출',
       add: '추가',
+      membership: '멤버십',
       selectedLang:"한국어"
     },
   
@@ -71,7 +72,10 @@ export default {
       desc: '현재 다음과 같은 거래소나 덱스(DEX)들을 통해 $SOS를 구매 할 수 있습니다.',
       youCanBuy: '$SOS를 구매 할 수 있는',
     },
-  
+    multi: {
+      title: '다중 서명자',
+      button: '투표 결과 보기',
+    },
     stake: {
       title: '스테이킹 보상',
       desc: `<span>

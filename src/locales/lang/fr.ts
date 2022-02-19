@@ -6,6 +6,7 @@ export default {
       bridge: 'Bridge',
       lending: 'Prêt',
       add: 'Ajouter',
+      membership: 'Adhésion',
       selectedLang:"Français"
     },
   
@@ -70,7 +71,10 @@ export default {
       desc: '$SOS est disponible dans les bourses et DEX suivants',
       youCanBuy: "$SOS est disponible à l'achat en",
     },
-  
+    multi: {
+      title: 'Multi-signatures',
+      button: 'RÉSULTATS DU VOTE',
+    },
     stake: {
       title: 'Incitation au Staking',
       desc: `<span>

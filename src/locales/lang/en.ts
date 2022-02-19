@@ -7,6 +7,7 @@ export default {
     dex: 'DEX',
     lending: 'Lending',
     add: 'Add',
+    membership: 'Membership',
     selectedLang:"En"
   },
 
@@ -71,7 +72,10 @@ export default {
     desc: 'You can currently buy $SOS on the following exchanges and DEXs.',
     youCanBuy: 'You can buy $SOS in',
   },
-
+  multi: {
+    title: 'Multi-Signers',
+    button: 'VIEW VOTING RESULTS',
+  },
   stake: {
     title: 'STAKING INCENTIVE',
     desc: `<span>

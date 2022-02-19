@@ -7,6 +7,7 @@ export default {
       dex: 'DEX',
       lending: '貸付',
       add: '追加',
+      membership: '会員資格',
       selectedLang:"日本語"
     },
   
@@ -71,7 +72,10 @@ export default {
       desc: '現在、次の交換所とデックス(DEX)で$ SOSを購入できる。',
       youCanBuy: '$SOSを購入出来る',
     },
-  
+    multi: {
+      title: 'マルチ署名者',
+      button: '投票結果を見る',
+    },
     stake: {
       title: 'ステーキング  インセンティブ',
       desc: `<span>

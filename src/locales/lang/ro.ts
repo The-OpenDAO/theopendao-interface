@@ -7,6 +7,7 @@ export default {
       dex: 'DEX',
       lending: 'Împrumut',
       add: 'Adaugă',
+      membership: 'Afilierea',
       selectedLang:"Romanian"
     },
   
@@ -71,7 +72,10 @@ export default {
       desc: 'În prezent, puteți cumpăra $SOS pe următoarele schimburi și DEX-uri.',
       youCanBuy: 'Puteți cumpăra $SOS în',
     },
-  
+    multi: {
+      title: 'Semnatari multipli',
+      button: 'VEZI REZULTATELE VOTULUI',
+    },
     stake: {
       title: 'Stimulentul de Staking ',
       desc: `<span>

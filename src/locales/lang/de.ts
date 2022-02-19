@@ -7,6 +7,7 @@ export default {
       dex: 'DEX',
       lending: 'Ausleihen',
       add: 'Hinzufügen',
+      membership: 'Mitgliedschaften',
       selectedLang:"Deutsch"
     },
   
@@ -71,7 +72,10 @@ export default {
       desc: 'Man kann zur Zeit $SOS auf den folgenden Börsen und dezentralen Börsen kaufen',
       youCanBuy: 'Man kann $SOS kaufen auf',
     },
-  
+    multi: {
+      title: 'Mehrfachunterzeichner',
+      button: 'ERGEBNISSE',
+    },
     stake: {
       title: 'Stakingbelohnung',
       desc: `<span>

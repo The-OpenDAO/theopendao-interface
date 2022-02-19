@@ -3,6 +3,7 @@
   <Roadmap />
   <Distribution />
   <HowToBuy />
+  <Multi />
   <!-- <DataBoard />-->
   <Staking />
   <Farm />
@@ -15,6 +16,7 @@
 import Banner from './components/Banner.vue'
 import Roadmap from './components/Roadmap.vue'
 import Distribution from './components/Distribution/index.vue'
+import Multi from './components/Multi/index.vue'
 import HowToBuy from './components/HowToBuy/index.vue'
 import DataBoard from './components/DataBoard.vue'
 import Staking from './components/Staking.vue'

@@ -7,6 +7,7 @@ export default {
       dex: 'DEX',
       lending: 'Préstamo',
       add: 'Añadir',
+      membership: 'Afiliación',
       selectedLang:"Espanol"
     },
   
@@ -71,7 +72,10 @@ export default {
       desc: 'Actualmente puede comprar $SOS en los siguientes intercambios y intercambio descentralizado.',
       youCanBuy: 'Puedes comprar $SOS en',
     },
-  
+    multi: {
+      title: 'Multifirmantes',
+      button: 'RESULTADOS',
+    },
     stake: {
       title: 'Incentivo de participación',
       desc: `<span>

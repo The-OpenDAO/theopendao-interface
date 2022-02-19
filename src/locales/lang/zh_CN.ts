@@ -5,6 +5,7 @@ export default {
     bridge: '跨链桥',
     lending: '借贷',
     add: '添加',
+    membership: '会员',
     selectedLang:'中文'
   },
 
@@ -69,7 +70,10 @@ export default {
     desc: '目前您可以到这些交易平台购买 $SOS。',
     youCanBuy: '您可以来这里购买 $SOS',
   },
-
+  multi: {
+    title: '多重签名者',
+    button: '查看投票结果',
+  },
   stake: {
     title: '质押奖励',
     desc: `<span>

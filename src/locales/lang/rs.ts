@@ -7,6 +7,7 @@ export default {
       dex: 'DEX',
       lending: 'Lending',
       add: 'Добавить',
+      membership: 'Членство',
       selectedLang:"Russian"
     },
   
@@ -71,7 +72,10 @@ export default {
       desc: 'В настоящее время $SOS можно купить на следующих биржах и DEXs:',
       youCanBuy: 'Вы можете купить $SOS в',
     },
-  
+    multi: {
+      title: 'Многоподписчики',
+      button: 'ИТОГИ ГОЛОСОВАНИЯ',
+    },
     stake: {
       title: 'Staking Стимулирование ',
       desc: `<span>

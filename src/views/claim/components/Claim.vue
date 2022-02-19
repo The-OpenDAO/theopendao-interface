@@ -18,6 +18,11 @@
 
       <!-- right -->
       <div class="right">
+        <a target="_blank" href="https://opensea.io/collection/opendao-genesis-membership">
+          <div class="gotoOpensea">
+            OpenSea
+          </div>
+        </a>
         <div class="desc">
           Holding this token may entitle the owner access to airdrops, early access to future collections, early access to curated drops and various other benefits.
         </div>
@@ -205,6 +210,18 @@ const showMessage = () => {
       flex: 1;
       padding: 30px;
       padding-top: 80px;
+      .gotoOpensea{
+        width: 200px;
+        height: 56px;
+        background: #0069ff;
+        border-radius: 10px;
+        color: #fff;
+        line-height: 56px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
       .title {
         font-size: 24px;
         font-weight: bold;

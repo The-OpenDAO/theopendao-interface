@@ -7,6 +7,7 @@ export default {
       dex: 'DEX',
       lending: 'Prestito',
       add: 'Aggiungi ',
+      membership: 'Iscrizione',
       selectedLang:"Italina"
     },
   
@@ -71,7 +72,10 @@ export default {
       desc: 'Attualmente puoi acquistare $SOS sui seguenti scambi e DEX.',
       youCanBuy: 'Puoi acquistare $SOS in',
     },
-  
+    multi: {
+      title: 'Multifirmatari',
+      button: 'RISULTATI DEL VOTO',
+    },
     stake: {
       title: 'Incentivo per lo staking',
       desc: `<span>

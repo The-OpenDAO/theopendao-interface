@@ -26,6 +26,7 @@ export default defineConfig({
   },
   plugins: [vue(), WindiCSS()],
   build: {
+    chunkSizeWarningLimit: 6600,
     rollupOptions: {
       plugins: [inject({ Buffer: ['buffer', 'Buffer'] })],
     },

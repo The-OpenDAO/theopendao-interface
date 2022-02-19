@@ -7,6 +7,7 @@ export default {
       dex: 'DEX',
       lending: 'การให้ยืม',
       add: 'เติม',
+      membership: 'สมาชิก',
       selectedLang:"Thai"
     },
   
@@ -71,7 +72,10 @@ export default {
       desc: 'คุณสามารถซื้อ $SOS ได้ตามกระดานการเทรด( Exchanges ) และทาง DEXs.',
       youCanBuy: 'คุณสามารถชื้อ $SOS ได้',
     },
-  
+    multi: {
+      title: 'ผู้ลงนามหลายคน',
+      button: 'ดูผลการโหวต',
+    },
     stake: {
       title: 'ค่าตอบแทนStaking',
       desc: `<span>
