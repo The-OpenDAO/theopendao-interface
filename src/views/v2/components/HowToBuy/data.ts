@@ -16,7 +16,7 @@ export const list = [
     url: 'https://app.dodoex.io/exchange/ETH-SOS?network=mainnet',
   },
   {
-    name: 'OKEx',
+    name: 'OKX',
     url: 'https://www.okex.com/trade-spot/sos-usdt',
   },
   {

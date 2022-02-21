@@ -13,6 +13,7 @@ import Header from '@/components/Header.vue'
 </script>
 
 <style lang="scss">
+@import "./assets/style/base.css";
 #app {
   background: #18191d;
   color: #fff;
@@ -66,15 +67,20 @@ import Header from '@/components/Header.vue'
     }
   }
 }
-.el-drawer__body {
-  padding: unset !important;
-  overflow-y: scroll;
+// .el-drawer__body {
+//   padding: unset !important;
+//   overflow-y: auto;
+// }
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover{
+  color: #fff!important;
 }
 .el-dropdown__popper.el-popper {
   border: 1px solid #1e1f23 !important;
   background: #1e1f23 !important;
   margin: -24px 0 0 0 !important;
   width: 120px;
+  max-height: 400px;
+  overflow-y: auto;
   .el-dropdown-menu {
     background: #1e1f23 !important;
     font-size: 16px;
@@ -159,7 +165,16 @@ import Header from '@/components/Header.vue'
     opacity: 0.6;
   }
 }
-.el-dropdown__popper.el-popper {
-  //background: #000!important;
+::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 1em;
+  background-color: rgba(200,200,200,.6);
+}
+::-webkit-scrollbar-track{
+  border-radius: 1em;
+  background-color: rgba(50,50,50,.1);
 }
 </style>

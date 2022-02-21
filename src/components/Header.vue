@@ -8,7 +8,7 @@
       </a>
       <Menu />
       <div class="header-right-area">
-        <el-dropdown
+        <el-dropdown 
           class="header-language"
           @visible-change="arrow"
           @command="handleCommand"
@@ -182,12 +182,14 @@
                 <el-icon><location /></el-icon>
                 <span>{{ $t("header.language") }}</span>
               </template>
-              <el-menu-item
-                v-for="(item, index) in locals"
-                :disabled="item.disabled"
-                @click="setI18nLanguage(item.key)"
-                >{{ item.name }}</el-menu-item
-              >
+              <el-scrollbar style="height:400px;">
+                <el-menu-item
+                  v-for="(item, index) in locals"
+                  :disabled="item.disabled"
+                  @click="setI18nLanguage(item.key)"
+                  >{{ item.name }}</el-menu-item
+                >
+              </el-scrollbar>
             </el-sub-menu>
           </el-menu>
         </el-col>
@@ -307,7 +309,11 @@ html:lang(rs) .header-right-area {
       font-weight: bold;
       color: #ffffff;
       line-height: 60px;
-      .arrow {
+      .el-icon--right {
+        padding-top: 3px;
+        padding-left: 3px;
+      }
+      .el-icon--down {
         padding-top: 3px;
         padding-left: 3px;
       }

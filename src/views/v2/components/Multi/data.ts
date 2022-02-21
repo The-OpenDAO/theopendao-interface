@@ -14,7 +14,7 @@ export const signerList = [
     },
     {
         img: '3.png',
-        name: 'OKEx',
+        name: 'OKX',
         val: 39.74
     },
     {

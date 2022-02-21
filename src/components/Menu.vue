@@ -2,9 +2,12 @@
   <div>
     <el-dropdown class="dropdwon-style">
       <span class="el-dropdown-link">
-        <a @click="goAnchor('#sos-chain', 'sos-chain')">{{
-          $t("header.sosChain")
-        }}</a>
+        <a @click="goAnchor('#sos-chain', 'sos-chain')"
+          >{{ $t("header.sosChain") }}
+          <el-icon class="el-icon--down arrow">
+            <arrow-down />
+          </el-icon>
+        </a>
       </span>
       <template #dropdown>
         <el-dropdown-menu>
@@ -34,9 +37,11 @@
     </div>
     <el-dropdown class="dropdwon-style">
       <span class="el-dropdown-link">
-        <a @click="goAnchor('#community', 'community')">{{
-          $t("header.community")
-        }}</a>
+        <a @click="goAnchor('#community', 'community')"
+          >{{ $t("header.community") }}
+          <el-icon class="el-icon--down arrow">
+            <arrow-down /> </el-icon
+        ></a>
       </span>
       <template #dropdown>
         <el-dropdown-menu>
@@ -77,8 +82,11 @@
     </el-dropdown>
     <el-dropdown class="dropdwon-style">
       <span class="el-dropdown-link"
-        ><a @click="goAnchor('#how-to-buy', 'how-to-buy')">$SOS</a></span
-      >
+        ><a @click="goAnchor('#how-to-buy', 'how-to-buy')"
+          >$SOS
+          <el-icon class="el-icon--down arrow">
+            <arrow-down /> </el-icon></a
+      ></span>
       <template #dropdown>
         <el-dropdown-menu>
           <el-dropdown-item>
@@ -136,6 +144,7 @@
 
 <script setup lang="ts" scoped>
 import { onMounted, reactive, ref, computed } from "vue";
+import { ArrowDown } from "@element-plus/icons-vue";
 import { goAnchor } from "@/utils/index";
 const data = reactive({
   dropList: [
@@ -174,59 +183,65 @@ const data = reactive({
 
 <style lang="scss">
 @media only screen and (max-width: 1440px) {
-html:lang(zh_CN) .dropdwon-style {
-  margin: 0 20px;
+  html:lang(zh_CN) .dropdwon-style {
+    margin: 0 20px;
+  }
+  html:lang(zh_TW) .dropdwon-style {
+    margin: 0 20px;
+  }
+  html:lang(thai) .dropdwon-style {
+    margin: 0 20px;
+  }
+  html:lang(en) .dropdwon-style {
+    margin: 0 12px;
+  }
+  html:lang(it) .dropdwon-style {
+    margin: 0 12px;
+  }
+  html:lang(kr) .dropdwon-style {
+    margin: 0 15px;
+  }
+  html:lang(tk) .dropdwon-style {
+    margin: 0 15px;
+  }
+  html:lang(ro) .dropdwon-style {
+    margin: 0 11px;
+  }
+  html:lang(fr) .dropdwon-style {
+    margin: 0 10px;
+  }
+  html:lang(es) .dropdwon-style {
+    margin: 0 11px;
+  }
+  html:lang(jp) .dropdwon-style {
+    margin: 0 12px;
+  }
+  html:lang(de) .dropdwon-style {
+    margin: 0 5px;
+  }
+  html:lang(rs) .dropdwon-style {
+    margin: 0 5px;
+  }
 }
-html:lang(zh_TW) .dropdwon-style {
-  margin: 0 20px;
-}
-html:lang(thai) .dropdwon-style {
-  margin: 0 20px;
-}
-html:lang(en) .dropdwon-style {
-  margin: 0 15px;
-}
-html:lang(it) .dropdwon-style {
-  margin: 0 15px;
-}
-html:lang(kr) .dropdwon-style {
-  margin: 0 15px;
-}
-html:lang(tk) .dropdwon-style {
-  margin: 0 15px;
-}
-html:lang(ro) .dropdwon-style {
-  margin: 0 15px;
-}
-html:lang(fr) .dropdwon-style {
-  margin: 0 15px;
-}
-html:lang(es) .dropdwon-style {
-  margin: 0 15px;
-}
-html:lang(jp) .dropdwon-style {
-  margin: 0 15px;
-}
-html:lang(de) .dropdwon-style {
-  margin: 0 8px;
-}
-html:lang(rs) .dropdwon-style {
-  margin: 0 10px;
-}
-}
-@media only screen and (min-width: 1440px){
-html:lang(kr) .dropdwon-style {
-  margin: 0 30px;
-}
-html:lang(zh_CN) .dropdwon-style {
-  margin: 0 30px;
-}
-html:lang(zh_TW) .dropdwon-style {
-  margin: 0 30px;
-}
-html:lang(thai) .dropdwon-style {
-  margin: 0 30px;
-}
+@media only screen and (min-width: 1440px) {
+  html:lang(kr) .dropdwon-style {
+    margin: 0 30px;
+  }
+  html:lang(zh_CN) .dropdwon-style {
+    margin: 0 30px;
+  }
+  html:lang(zh_TW) .dropdwon-style {
+    margin: 0 30px;
+  }
+  html:lang(thai) .dropdwon-style {
+    margin: 0 30px;
+  }
+  html:lang(de) .dropdwon-style {
+    margin: 0 15px;
+  }
+  html:lang(rs) .dropdwon-style {
+    margin: 0 15px;
+  }
 }
 .dropdwon-style {
   margin: 0 20px;
