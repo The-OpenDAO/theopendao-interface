@@ -31,6 +31,7 @@ import Chart from './Chart.vue'
 //   background-repeat: no-repeat;
 // }
 .distribution {
+  padding-bottom: 80px!important;
   .section-desc {
     text-align: center;
     font-size: 20px;

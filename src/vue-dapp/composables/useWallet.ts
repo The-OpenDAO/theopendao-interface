@@ -122,7 +122,8 @@ export function useWallet(options: UseWalletOptions = { library: 'ethers' || 'we
     provider.value = markRaw(_provider)
     walletName.value = _walletName
     status.value = 'connected'
-
+    // console.log(provider.value.selectedAddress)
+    localStorage.setItem('name',walletName.value)
       // EIP-1193 subscriber
     subscribeDisconnect()
     subscribeAccountsChanged()

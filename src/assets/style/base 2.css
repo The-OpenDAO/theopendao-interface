@@ -1,0 +1,31 @@
+/*  
+for windows scroll styles
+*/
+::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 1em;
+  background-color: rgba(200,200,200,.6);
+}
+::-webkit-scrollbar-track{
+  border-radius: 1em;
+  background-color: rgba(50,50,50,.1);
+}
+/* 
+change element-plus style 
+*/
+.el-drawer.ltr {
+  width: 100vw !important;
+  background: #25262b;
+}
+.el-drawer.ltr .el-drawer__close .icon{
+  color: #fff;
+  font-weight: bold !important;
+  width: 1.3rem !important;
+  height: 1.3rem !important;
+}
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover{
+  color: #fff!important;
+}

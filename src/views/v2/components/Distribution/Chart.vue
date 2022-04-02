@@ -65,7 +65,7 @@
 <style lang="scss" scoped>
 .chart {
   display: flex;
-  padding-top: 40px;
+  padding-top: 80px;
   .left {
     flex: 1;
     display: flex;

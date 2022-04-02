@@ -1,19 +1,21 @@
 <template>
   <div id="sos" class="banner-bg">
+    <img class="banner-left" src="@/assets/images/banner-left.png" alt="" />
+    <img class="banner-right" src="@/assets/images/banner-right.png" alt="" />
     <section class="section bannner">
       <div class="banner-box">
-        <p class="banner-title">{{ $t('banner.theOpenDAO') }}</p>
-        <p class="banner-desc max650">{{ $t('banner.bannerDesc1') }}</p>
-        <p class="banner-title">{{ $t('banner.SOS') }}</p>
-        <p class="banner-desc max530">{{ $t('banner.bannerDesc2') }}</p>
+        <p class="banner-title">{{ $t("banner.theOpenDAO") }}</p>
+        <p class="banner-desc max650">{{ $t("banner.bannerDesc1") }}</p>
+        <p class="banner-title">{{ $t("banner.SOS") }}</p>
+        <p class="banner-desc max530">{{ $t("banner.bannerDesc2") }}</p>
         <div class="banner-data">
           <div class="banner-data-box">
-            <p class="banner-data-title">{{ $t('banner.tvt') }}</p>
+            <p class="banner-data-title">{{ $t("banner.tvt") }}</p>
             <p class="banner-data-value">$ {{ data.totalVolume }}</p>
             <img src="@/assets/images/volume.png" alt="" />
           </div>
           <div class="banner-data-box">
-            <p class="banner-data-title">{{ $t('banner.fdv') }}</p>
+            <p class="banner-data-title">{{ $t("banner.fdv") }}</p>
             <p class="banner-data-value">$ {{ data.marketCap }}</p>
             <img src="@/assets/images/value.png" alt="" />
           </div>
@@ -24,30 +26,42 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, reactive } from 'vue'
-import { getMarketInfo, getTotalVolume } from '@/api/index'
-import { formatNumber } from '@/utils/index'
+import { onMounted, reactive } from "vue";
+import { getMarketInfo, getTotalVolume } from "@/api/index";
+import { formatNumber } from "@/utils/index";
 
 const data = reactive({
-  totalVolume: '',
-  marketCap: '',
-})
+  totalVolume: "",
+  marketCap: "",
+});
 
 onMounted(async () => {
-  const info = await getMarketInfo()
-  data.marketCap = formatNumber(info.market_data.fully_diluted_valuation.usd)
-  data.totalVolume = formatNumber(await getTotalVolume())
-})
+  const info = await getMarketInfo();
+  data.marketCap = formatNumber(info.market_data.fully_diluted_valuation.usd);
+  data.totalVolume = formatNumber(await getTotalVolume());
+});
 </script>
 
 <style lang="scss" scoped>
 .banner-bg {
   width: 100vw;
-  background-image: url(@/assets/images/banner.png);
+  background-image: url(@/assets/images/banner_new.png);
   background-position: center;
   display: flex;
   justify-content: center;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  .banner-left {
+    position: absolute;
+    left: 0;
+    bottom: -90px;
+  }
+  .banner-right {
+    position: absolute;
+    right: 0;
+    top: 0px;
+  }
   .max650 {
     max-width: 650px;
   }
@@ -55,13 +69,14 @@ onMounted(async () => {
     max-width: 530px;
   }
   .bannner {
+    // width: 800px!important;
     // height: 800px;
     .banner-box {
       margin: 140px auto 0 auto;
       text-align: left;
       .banner-title {
         margin-top: 35px;
-        font-size: 90px;
+        font-size: 70px;
         font-weight: bold;
         color: rgba(255, 255, 255, 1);
       }
@@ -112,18 +127,33 @@ onMounted(async () => {
   }
 }
 
+@media only screen and (max-width: 1750px) {
+  .banner-bg {
+    .banner-right {
+      width: 700px;
+    }
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .banner-bg {
+    .banner-right {
+      display: none;
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
-   html:lang(rs) .banner-bg .bannner .banner-box .banner-data .banner-data-box,
-   html:lang(thai) .banner-bg .bannner .banner-box .banner-data .banner-data-box,
-   html:lang(ro) .banner-bg .bannner .banner-box .banner-data .banner-data-box,
-   html:lang(es) .banner-bg .bannner .banner-box .banner-data .banner-data-box{
-     height: unset;
-     min-height: 90px;
-    .banner-data-title   {
-            word-break: break-all;
-            max-width: 200px;
-      }
-   } 
+  html:lang(rs) .banner-bg .bannner .banner-box .banner-data .banner-data-box,
+  html:lang(thai) .banner-bg .bannner .banner-box .banner-data .banner-data-box,
+  html:lang(ro) .banner-bg .bannner .banner-box .banner-data .banner-data-box,
+  html:lang(es) .banner-bg .bannner .banner-box .banner-data .banner-data-box {
+    height: unset;
+    min-height: 90px;
+    .banner-data-title {
+      word-break: break-all;
+      max-width: 200px;
+    }
+  }
 
   // html:lang(de) .how-to-buy .left .tip span {
   //   max-width: 380px;

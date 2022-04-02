@@ -1,61 +1,80 @@
 <script setup lang="ts">
-import { useBoard, useEthers, displayEther, shortenAddress, useEthersHooks } from '@/vue-dapp/index'
-import { computed, h, onMounted, reactive, ref, watch } from 'vue'
-const { open } = useBoard()
-const { address, balance, isActivated } = useEthers()
-const { onActivated, onDeactivated, onChanged } = useEthersHooks()
+import {
+  useBoard,
+  useEthers,
+  displayEther,
+  shortenAddress,
+  useWallet,
+  useEthersHooks,
+} from "@/vue-dapp/index";
+import { computed, h, onMounted, reactive, ref, watch } from "vue";
+const { open } = useBoard();
+const { address, balance, isActivated } = useEthers();
+const { onActivated, onDeactivated, onChanged } = useEthersHooks();
+const { connect, disconnect } = useWallet();
 defineProps({
   fixed: Boolean,
-})
+});
 onMounted(async () => {
-  changeNetworks()
-})
+  const name = localStorage.getItem("name");
+  connect(name);
+  changeNetworks();
+});
 // watch(error, error => {
 //   errorRef.value.openError('Failed to connect', error, false)
 // })
 onDeactivated(() => {
-  console.log('deactivated', 'useEthHooks------')
-})
+  console.log("deactivated", "useEthHooks------");
+});
 const wallet = reactive({
-  address: '',
-})
-const emit = defineEmits(['getAddress'])
+  address: "",
+});
+const emit = defineEmits(["getAddress"]);
 onActivated(async ({ provider, address }) => {
-  console.log('onActivated', 'useEthHooks------', provider, address)
-  wallet.address = address
-  emit('getAddress', address)
-})
-onChanged(data => {
-  console.log('change useEthHooks------', data)
-  wallet.address = data.address
-  emit('getAddress', data.address)
+  console.log("onActivated", "useEthHooks------", provider, address);
+  wallet.address = address;
+  emit("getAddress", address);
+});
+onChanged((data) => {
+  console.log("change useEthHooks------", data);
+  wallet.address = data.address;
+  emit("getAddress", data.address);
   // debounceLogin(data.address)
-})
+});
+const disconnecButton = function(){
+  disconnect()
+  wallet.address = ''
+  console.log(111111)
+}
 function changeNetworks() {
-  const chainID = import.meta.env.VITE_APP_CHAIN_ID
+  const chainID = import.meta.env.VITE_APP_CHAIN_ID;
   ethereum
     .request({
-      method: 'wallet_switchEthereumChain',
+      method: "wallet_switchEthereumChain",
       params: [{ chainId: `0x${chainID}` }],
     })
-    .then(permissions => {
-      console.log('successful')
+    .then((permissions) => {
+      console.log("successful");
     })
-    .catch(error => {
+    .catch((error) => {
       // errorRef.value.openError('Failed to connect', error.message, false)
-      console.log('failed')
-    })
+      console.log("failed");
+    });
 }
 </script>
 
 <template>
   <div class="connect">
     <div>
-      <div class="connect-top connecting" @click="open()" v-if="wallet.address == ''">
+      <div
+        class="connect-top connecting"
+        @click="open()"
+        v-if="wallet.address == ''"
+      >
         <img src="@/assets/images/wallet.png" alt />
-        <span class="connect-style-disable">{{ $t('header.wallet') }}</span>
+        <span class="connect-style-disable">{{ $t("header.wallet") }}</span>
       </div>
-      <div class="connect-top connected" v-else>
+      <div class="connect-top connected" v-else @click="disconnecButton()">
         <img src="@/assets/images/wallet.png" alt />
         <span class="connect-style">{{ shortenAddress(wallet.address) }}</span>
       </div>
@@ -74,12 +93,15 @@ function changeNetworks() {
 </template>
 <style lang="scss" scoped>
 $themeColor: #00c38bff;
-html:lang(fr) .connect, html:lang(it) .connect , html:lang(thai) .connect, html:lang(rs) .connect   {
-  img{
-    left: 28px!important;
+html:lang(fr) .connect,
+html:lang(it) .connect,
+html:lang(thai) .connect,
+html:lang(rs) .connect {
+  img {
+    left: 28px !important;
   }
-  .connect-style-disable{
-    padding-left: 65px!important;
+  .connect-style-disable {
+    padding-left: 65px !important;
   }
 }
 .metamask-img {
@@ -96,7 +118,7 @@ html:lang(fr) .connect, html:lang(it) .connect , html:lang(thai) .connect, html:
   line-height: 48px;
   transition: all 0.4s ease;
   font-size: 18px;
-  font-family: 'GothamRnd';
+  font-family: "GothamRnd";
   font-weight: 500;
   color: #ffffff;
   // transform: translate(-14px, 0);
@@ -108,7 +130,7 @@ html:lang(fr) .connect, html:lang(it) .connect , html:lang(thai) .connect, html:
   background: #7c7c7c;
 }
 .address {
-  font-family: 'GothamRnd';
+  font-family: "GothamRnd";
   font-size: 18px;
   height: 48px;
   line-height: 48px;

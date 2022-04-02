@@ -29,7 +29,7 @@ const list = [
   },
   {
     name: 'discord',
-    url: 'https://discord.gg/opendao',
+    url: 'https://discord.gg/theopendao',
   },
   {
     name: 'notion',
