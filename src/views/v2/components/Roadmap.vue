@@ -33,7 +33,7 @@
           <ul class="roadmap-ul">
             <li class="roadmap-list">
               <div class="roadmap-point"></div>
-              OpenDAO Genesis Membership utility NFT
+              The OpenDAO Genesis Membership utility NFT
             </li>
             <li class="roadmap-list">
               <div class="roadmap-point"></div>
@@ -47,7 +47,7 @@
             </li>
             <li class="roadmap-list">
               <div class="roadmap-point"></div>
-              OpenDAO P2E 2.0 gaming metaverse(BigTime)
+              The OpenDAO P2E 2.0 gaming metaverse(BigTime)
             </li>
           </ul>
         </div>
@@ -59,7 +59,7 @@
               <div class="roadmap-point"></div>
             </li>
             <li class="roadmap-list">
-              OpenDAO PFP collection
+              The OpenDAO PFP collection
               <div class="roadmap-point"></div>
             </li>
           </ul>
@@ -109,7 +109,7 @@
             <ul class="roadmap-ul">
               <li class="roadmap-list">
                 <div class="roadmap-point"></div>
-                OpenDAO Genesis Membership utility NFT
+                The OpenDAO Genesis Membership utility NFT
               </li>
               <li class="roadmap-list">
                 <div class="roadmap-point"></div>
@@ -122,7 +122,7 @@
               </li>
               <li class="roadmap-list">
                 <div class="roadmap-point"></div>
-                OpenDAO P2E 2.0 gaming metaverse(BigTime)
+                The OpenDAO P2E 2.0 gaming metaverse(BigTime)
               </li>
             </ul>
           </div>
@@ -140,7 +140,7 @@
               </li>
               <li class="roadmap-list">
                 <div class="roadmap-point"></div>
-                OpenDAO PFP collection
+                The OpenDAO PFP collection
               </li>
             </ul>
           </div>

@@ -17,7 +17,7 @@ export const list = [
   },
   {
     name: 'OKX',
-    url: 'https://www.okex.com/trade-spot/sos-usdt',
+    url: 'https://www.okx.com/trade-spot/sos-usdt',
   },
   {
     name: 'Huobi',
@@ -91,5 +91,9 @@ export const list = [
   {
     name: 'XT.COM',
     url: 'https://www.xt.com/trade/sos_usdt',
+  },
+  {
+    name: 'Latokens',
+    url: 'https://latoken.com/exchange/SOS_USDT',
   },
 ]
