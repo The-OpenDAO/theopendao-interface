@@ -58,7 +58,7 @@ export default {
       usersClaimed: 'ข้อร้องเรียนจากผู้ใช้',
       transactions: 'ธุรกรรม',
       holders: 'On-Chain Holders',
-      openDAO: 'OpenDAO',
+      openDAO: 'The OpenDAO',
       openDAOTitle: '20% ของ SOS โทเคนจะถูกจัดสรรให้กับ OpenDAO เพื่อ :',
       openDAODesc1: 'สนับสนุนศิลปินหน้าใหม่และผลงานต้นฉบับของพวกเขา',
       openDAODesc2: 'สนับสนุนชุมชน NFT',
@@ -139,7 +139,7 @@ export default {
     },
   
     footer: {
-      copyright: 'Copyright © 2022 by OpenDAO. All Rights Reserved.',
+      copyright: 'Copyright © 2022 by The OpenDAO. All Rights Reserved.',
     },
   }
   

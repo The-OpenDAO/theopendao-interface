@@ -136,7 +136,7 @@ export default {
     },
   
     footer: {
-      copyright: 'Copyright © 2022 par OpenDAO. Tous Droits Réservés.',
+      copyright: 'Copyright © 2022 par The OpenDAO. Tous Droits Réservés.',
     },
   }
   

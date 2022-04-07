@@ -58,7 +58,7 @@ export default {
       usersClaimed: 'Kullanıcı hak talebinde bulunma',
       transactions: 'İşlemler',
       holders: 'Zincir üstü tutucular',
-      openDAO: 'OpenDAO',
+      openDAO: 'The OpenDAO',
       openDAOTitle: "$SOS jetonlarının %20'si OpenDAO'ya şu amaçlarla tahsis edilmiştir:",
       openDAODesc1: 'Gelişmekte olan sanatçıları ve orijinal çalışmalarını destekleyin',
       openDAODesc2: 'NFT topluluklarını destekleyin',
@@ -139,7 +139,7 @@ export default {
     },
   
     footer: {
-      copyright: "Telif hakkı © 2022 OpenDAO'ya aittir.  Her hakkı saklıdır.",
+      copyright: "Telif hakkı © 2022 The OpenDAO'ya aittir.  Her hakkı saklıdır.",
     },
   }
   

@@ -56,7 +56,7 @@ export default {
     usersClaimed: '领取人数',
     transactions: '交易总量',
     holders: '链上持有人数',
-    openDAO: 'OpenDAO',
+    openDAO: 'The OpenDAO',
     openDAOTitle: 'OpenDAO 20% 的$SOS 代币用于：',
     openDAODesc1: '支持新兴艺术家和他们的原创作品',
     openDAODesc2: '支持众多 NFT 社区',
@@ -135,6 +135,6 @@ export default {
   },
 
   footer: {
-    copyright: 'OpenDAO 版权所有 © 2022',
+    copyright: 'The OpenDAO 版权所有 © 2022',
   },
 }

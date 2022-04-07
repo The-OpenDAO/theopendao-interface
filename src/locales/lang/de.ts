@@ -25,7 +25,7 @@ export default {
     },
   
     banner: {
-      theOpenDAO: 'OpenDAO',
+      theOpenDAO: 'The OpenDAO',
       SOS: '$SOS',
       bannerDesc1: 'Eine digitale offene Community mit dem Ziel alle Künstler und Sammler zu unterstützen und ihnen die gleiche Chance zu bieten',
       bannerDesc2: 'Der Token für die digitale Welt',
@@ -139,7 +139,7 @@ export default {
     },
   
     footer: {
-      copyright: 'Copyright © 2022 für OpenDAO. All Rights Reserved',
+      copyright: 'Copyright © 2022 für The OpenDAO. All Rights Reserved',
     },
   }
   
