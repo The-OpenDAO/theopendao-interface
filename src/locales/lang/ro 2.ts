@@ -58,7 +58,7 @@ export default {
       usersClaimed: 'Utilizatorii au revendicat',
       transactions: 'Tranzacții',
       holders: 'Titulari',
-      openDAO: 'OpenDAO',
+      openDAO: 'The OpenDAO',
       openDAOTitle: '20% din jetoanele $SOS au fost alocate OpenDAO pentru:',
       openDAODesc1: 'Susținerea artiștiilor în curs de dezvoltare și lucrărilor lor originale',
       openDAODesc2: 'Susținerea comunităților NFT',
@@ -139,7 +139,7 @@ export default {
     },
   
     footer: {
-      copyright: 'Drepturi de autor © 2022 de OpenDAO. Toate drepturile rezervate.',
+      copyright: 'Drepturi de autor © 2022 de The OpenDAO. Toate drepturile rezervate.',
     },
   }
   

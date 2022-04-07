@@ -58,7 +58,7 @@ export default {
       usersClaimed: 'Gli utenti hanno affermato',
       transactions: 'Transazioni',
       holders: 'Supporti a catena',
-      openDAO: 'OpenDAO',
+      openDAO: 'The OpenDAO',
       openDAOTitle: 'Il 20% dei token $SOS è stato assegnato a OpenDAO per:',
       openDAODesc1: 'Sostieni gli artisti emergenti e il loro lavoro originale',
       openDAODesc2: 'Supporta le comunità NFT',
@@ -140,7 +140,7 @@ export default {
     },
   
     footer: {
-      copyright: 'Copyright © 2022 di OpenDAO. Tutti i diritti riservati.',
+      copyright: 'Copyright © 2022 di The The OpenDAO. Tutti i diritti riservati.',
     },
   }
   

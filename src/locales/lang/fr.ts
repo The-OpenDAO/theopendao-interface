@@ -57,7 +57,7 @@ export default {
       usersClaimed: 'Les utilisateurs ont réclamé',
       transactions: 'Transactions',
       holders: 'Détenteurs On-Chain',
-      openDAO: 'OpenDAO',
+      openDAO: 'The OpenDAO',
       openDAOTitle: "20% des jetons $SOS ont été alloués à Trésorerie l'OpenDAO :",
       openDAODesc1: 'Soutenir les artistes émergents et leurs œuvres originales',
       openDAODesc2: 'Soutenir les communautés NFT',
@@ -136,7 +136,7 @@ export default {
     },
   
     footer: {
-      copyright: 'Copyright © 2022 par OpenDAO. Tous Droits Réservés.',
+      copyright: 'Copyright © 2022 par The The OpenDAO. Tous Droits Réservés.',
     },
   }
   

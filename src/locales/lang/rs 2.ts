@@ -58,7 +58,7 @@ export default {
       usersClaimed: 'Претендовавшие пользователи',
       transactions: 'Транзакции',
       holders: 'On-Chain держатели',
-      openDAO: 'OpenDAO',
+      openDAO: 'The OpenDAO',
       openDAOTitle: '20% от общего количества $SOS было выделено OpenDAO для:',
       openDAODesc1: 'Поддержка начинающих художников и их оригинальных работ',
       openDAODesc2: 'Поддержка сообществ NFT',
@@ -139,7 +139,7 @@ export default {
     },
   
     footer: {
-      copyright: 'Авторское право © 2022 принадлежит OpenDAO. Все права защищены.',
+      copyright: 'Авторское право © 2022 принадлежит The OpenDAO. Все права защищены.',
     },
   }
   

@@ -139,7 +139,7 @@ export default {
     },
   
     footer: {
-      copyright: 'OpenDAO による著作権© 2022全ての権利予約',
+      copyright: 'The OpenDAO による著作権© 2022全ての権利予約',
     },
   }
   
