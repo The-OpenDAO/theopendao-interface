@@ -92,7 +92,7 @@ const Echart = function (xData, yData, colorStyle, cur) {
     grid: {
       top: '5%',
       right: '20px',
-      left: '75px',
+      left: '95px',
       bottom: '11%',
     },
     xAxis: {

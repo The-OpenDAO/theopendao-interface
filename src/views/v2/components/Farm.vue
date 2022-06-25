@@ -224,21 +224,22 @@ const tvlETH = computed(() => {
 })
 
 async function tvlHour() {
+  let date_kt = Math.round(Date.now()/1000)
   let url = '/subgraphs/name/sushiswap/exchange'
-  let query = `{\r\n tokens(where: {symbol:"SOS"}) {\r\n id \r\n symbol \r\n name \r\n decimals \r\n totalSupply \r\n volume \r\n volumeUSD \r\n untrackedVolumeUSD \r\n txCount \r\n liquidity \r\n derivedETH \r\n basePairsDayData{\r\n id \r\n date \r\n reserveUSD} \r\n }\r\n}`
+  let query = `{\r\n pairDayDatas(where: {pair:"0xb84c45174bfc6b8f3eaecbae11dee63114f5c1b2" \r\n date_lt:${date_kt}} \r\n orderBy:date \r\n orderDirection: desc ) {\r\n id \r\n reserveUSD \r\n date} \r\n }`
   const data = await getData(url, query)
-  const echarts = data.data.tokens[0]
+  const echarts = data.data.pairDayDatas
   let xDate = []
   let yDate = []
   var cur = ''
-  let Arr = echarts.basePairsDayData.filter(el => el.id.startsWith('0xb84c45174bfc6b8f3eaecbae11dee63114f5c1b2'))
-  Arr.forEach(element => {
-    xDate.push(dayjs(element.date * 1000).format('MMM DD'))
+  // let Arr = echarts.basePairsDayData.filter(el => el.id.startsWith('0xb84c45174bfc6b8f3eaecbae11dee63114f5c1b2'))
+  echarts.forEach(element => {
+    xDate.unshift(dayjs(element.date * 1000).format('MMM DD'))
     if (LP.activeClass == 0) {
-      yDate.push((element.reserveUSD / 1000000).toFixed(2))
+      yDate.unshift((element.reserveUSD / 1000000).toFixed(2))
       cur = 'usd'
     } else {
-      yDate.push((element.reserveUSD / LP.ethPrice).toFixed(2))
+      yDate.unshift((element.reserveUSD / LP.ethPrice).toFixed(2))
       cur = 'eth'
     }
   })
