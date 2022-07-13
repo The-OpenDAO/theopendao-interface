@@ -43,7 +43,7 @@
             </li>
             <li class="roadmap-list">
               <div class="roadmap-point"></div>
-              721starter - Get early access to the NFTs of tomorrow
+              721FM - Get early access to the NFTs of tomorrow
             </li>
             <li class="roadmap-list">
               <div class="roadmap-point"></div>
@@ -118,7 +118,7 @@
               </li>
               <li class="roadmap-list">
                 <div class="roadmap-point"></div>
-                721starter - Get early access to the NFTs of tomorrow
+                721FM - Get early access to the NFTs of tomorrow
               </li>
               <li class="roadmap-list">
                 <div class="roadmap-point"></div>

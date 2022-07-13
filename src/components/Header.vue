@@ -87,7 +87,7 @@
               <el-icon><document /></el-icon>
               <span
                 ><a target="_blank" href="https://www.721.com/"
-                  >721Starter</a
+                  >721FM</a
                 ></span
               >
             </el-menu-item>

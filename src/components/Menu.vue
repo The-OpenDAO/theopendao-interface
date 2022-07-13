@@ -30,7 +30,7 @@
     </div>
     <div class="dropdwon-style">
       <span class="el-dropdown-link">
-        <a target="_blank" href="https://www.721.com/">721Starter</a>
+        <a target="_blank" href="https://www.721.com/">721FM</a>
       </span>
       <!-- <br />
       <span class="coming-soon">{{ $t('header.coming') }}</span> -->
