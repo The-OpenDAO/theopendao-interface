@@ -4,7 +4,7 @@
       <SectionTitle :text="$t('roadmap.title')" />
 
       <div class="content" v-if="scrrenWidth > 760">
-        <img class="roadmap-img" src="@/assets/images/roadmapNew1.png" alt="" />
+        <img class="roadmap-img"  src="@/assets/images/roadmapNew1.png" alt="" />
         <div class="roadmap-box-left road-map-Q1">
           <div class="roadmap-title">2021 Q4</div>
           <ul class="roadmap-ul">
@@ -296,32 +296,32 @@ const scrrenWidth = document.body.clientWidth;
       }
 
       .road-map-Q1 {
-        bottom: 80px;
-        left: 300px;
+        bottom: 180px;
+        left: 250px;
       }
 
       .road-map-Q2 {
-        right: -30px;
-        top: 280px;
+        right: 30px;
+        top: 450px;
       }
 
       .road-map-Q3 {
-        left: 790px;
-        top: 60px;
+        right: 10px;
+        top: 200px;
       }
 
       .road-map-Q4 {
-        right: 300px;
-        top: 60px;
+        right: -60px;
+        top: 40px;
       }
 
       .road-map-Q5 {
-        left: 35px;
+        left: 110px;
         top: 50px;
       }
 
       .road-map-Q6 {
-        right: 310px;
+        right: 220px;
         top: 20px;
       }
 
@@ -448,7 +448,7 @@ const scrrenWidth = document.body.clientWidth;
         }
 
         .road-map-Q3 {
-          right: 120px;
+          right: 100px;
           top: 200px;
         }
 
@@ -456,6 +456,15 @@ const scrrenWidth = document.body.clientWidth;
           right: 30px;
           top: 40px;
         }
+        .road-map-Q5 {
+        left: 35px;
+        top: 50px;
+      }
+
+      .road-map-Q6 {
+        right: 310px;
+        top: 20px;
+      }
       }
     }
   }
