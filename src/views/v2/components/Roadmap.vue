@@ -4,7 +4,7 @@
       <SectionTitle :text="$t('roadmap.title')" />
 
       <div class="content" v-if="scrrenWidth > 760">
-        <img class="roadmap-img" src="@/assets/images/roadmap.png" alt="" />
+        <img class="roadmap-img" src="@/assets/images/roadmapNew1.png" alt="" />
         <div class="roadmap-box-left road-map-Q1">
           <div class="roadmap-title">2021 Q4</div>
           <ul class="roadmap-ul">
@@ -51,25 +51,74 @@
             </li>
           </ul>
         </div>
-        <div class="roadmap-box-right road-map-Q3">
+        <div class="roadmap-box-left road-map-Q3">
           <div class="roadmap-title">2022 Q2</div>
           <ul class="roadmap-ul">
             <li class="roadmap-list">
-              0 fee NFT Escrow/Exchange on ETH network
               <div class="roadmap-point"></div>
+              0 fee NFT Escrow/Exchange on ETH network
             </li>
             <li class="roadmap-list">
-              The OpenDAO PFP collection
               <div class="roadmap-point"></div>
+              The OpenDAO PFP collection
+
             </li>
           </ul>
         </div>
-        <div class="roadmap-box-right road-map-Q4">
+        <div class="roadmap-box-right road-map-Q5">
+          <div class="roadmap-title">2022 Q3</div>
+          <ul class="roadmap-ul">
+            <li class="roadmap-list">
+              721FM Official Launch
+              <div class="roadmap-point"></div>
+            </li>
+            <li class="roadmap-list">
+              721FM Mobile APP - NFT Trading and Notification
+              <div class="roadmap-point"></div>
+            </li>
+            <li class="roadmap-list">
+              NFT Aggregator - Fast, better price and token reward
+              <div class="roadmap-point"></div>
+
+            </li>
+            <li class="roadmap-list">
+              Lauchpad 2.0 - For artists and users
+              <div class="roadmap-point"></div>
+
+            </li>
+          </ul>
+        </div>
+        <div class="roadmap-box-left road-map-Q6">
+          <div class="roadmap-title">2022 Q4</div>
+          <ul class="roadmap-ul">
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              New NFT swap protocol
+            </li>
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              Crypto trading simulator
+            </li>
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              APP features iteration
+            </li>
+          </ul>
+        </div>
+        <div class="roadmap-box-left road-map-Q4">
           <div class="roadmap-title">TBD</div>
           <ul class="roadmap-ul">
             <li class="roadmap-list">
-              Soschain - Bridge/DEX/Lending
               <div class="roadmap-point"></div>
+              Lending
+            </li>
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              NFT Lottery
+            </li>
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              Multichain ecosystem
             </li>
           </ul>
         </div>
@@ -147,16 +196,74 @@
         </div>
         <div class="roadmap-phone">
           <div>
+            <img src="@/assets/images/roadmap/roadmap-6.png" alt="" />
+          </div>
+          <div class="roadmap-box-right road-map-Q1">
+          <div class="roadmap-title">2022 Q3</div>
+          <ul class="roadmap-ul">
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              721FM Official Launch
+            </li>
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              721FM Mobile APP - NFT Trading and Notification
+            </li>
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              NFT Aggregator - Fast, better price and token reward
+
+            </li>
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              Lauchpad 2.0 - For artists and users
+
+            </li>
+          </ul>
+        </div>
+        </div>
+        <div class="roadmap-phone">
+          <div>
+            <img src="@/assets/images/roadmap/roadmap-5.png" alt="" />
+          </div>
+          <div class="roadmap-box-left road-map-Q1">
+          <div class="roadmap-title">2022 Q4</div>
+          <ul class="roadmap-ul">
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              New NFT swap protocol
+            </li>
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              Crypto trading simulator
+            </li>
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              APP features iteration
+            </li>
+          </ul>
+        </div>
+        </div>
+        <div class="roadmap-phone">
+          <div>
             <img src="@/assets/images/roadmap/roadmap-4.png" alt="" />
           </div>
           <div class="roadmap-box-left road-map-Q1">
             <div class="roadmap-title">TBD</div>
-            <ul class="roadmap-ul">
-              <li class="roadmap-list">
-                <div class="roadmap-point"></div>
-                Soschain - Bridge/DEX/Lending
-              </li>
-            </ul>
+          <ul class="roadmap-ul">
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              Lending
+            </li>
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              NFT Lottery
+            </li>
+            <li class="roadmap-list">
+              <div class="roadmap-point"></div>
+              Multichain ecosystem
+            </li>
+          </ul>
           </div>
         </div>
       </div>
@@ -173,36 +280,55 @@ const scrrenWidth = document.body.clientWidth;
 .wrapper {
   width: 100vw;
   border-top: unset !important;
+
   .roadmap {
     padding-bottom: 100px;
+
     .content {
       background-image: url(@/assets/images/roadmap-bg.png);
       background-repeat: no-repeat;
       padding-top: 40px;
       position: relative;
+
       // width: 1440px;
       .roadmap-img {
         margin: 0 auto;
       }
+
       .road-map-Q1 {
         bottom: 80px;
         left: 300px;
       }
+
       .road-map-Q2 {
         right: -30px;
         top: 280px;
       }
+
       .road-map-Q3 {
-        left: 170px;
+        left: 790px;
         top: 60px;
       }
+
       .road-map-Q4 {
-        right: 180px;
+        right: 300px;
         top: 60px;
       }
+
+      .road-map-Q5 {
+        left: 35px;
+        top: 50px;
+      }
+
+      .road-map-Q6 {
+        right: 310px;
+        top: 20px;
+      }
+
       .roadmap-box-left,
       .roadmap-box-right {
         position: absolute;
+
         .roadmap-point {
           width: 4px;
           height: 4px;
@@ -211,11 +337,13 @@ const scrrenWidth = document.body.clientWidth;
           margin: 6px 6px 0 6px;
           display: inline-block;
         }
+
         .roadmap-title {
           font-size: 24px;
           font-weight: bold;
           color: #ffffff;
         }
+
         .roadmap-list {
           margin-top: 10px;
           font-weight: 400;
@@ -224,16 +352,20 @@ const scrrenWidth = document.body.clientWidth;
           display: flex;
         }
       }
+
       .roadmap-box-right {
         text-align: right;
+
         .roadmap-list {
           justify-content: flex-end;
         }
       }
     }
+
     .timeline {
       width: 100%;
       position: relative;
+
       .line {
         content: " ";
         display: block;
@@ -245,10 +377,12 @@ const scrrenWidth = document.body.clientWidth;
         left: 50%;
         top: -50px;
       }
+
       .timeline-item {
         display: flex;
         width: 100%;
         position: relative;
+
         .point {
           position: absolute;
           z-index: 1;
@@ -259,25 +393,30 @@ const scrrenWidth = document.body.clientWidth;
           display: flex;
           justify-content: center;
           align-items: center;
+
           img {
             width: 24px;
             position: relative;
             // top: 20px;
           }
         }
+
         .inner {
           width: 50%;
+
           .item-content {
             padding-top: 20px;
             padding-bottom: 20px;
           }
         }
       }
+
       .timeline-item:nth-child(2n + 1) {
         text-align: right;
         padding-right: 30px;
         position: relative;
       }
+
       .timeline-item:nth-child(2n) {
         flex-direction: row-reverse;
         text-align: left;
@@ -287,47 +426,57 @@ const scrrenWidth = document.body.clientWidth;
     }
   }
 }
+
 @media only screen and (max-width: 1440px) {
   .wrapper {
     .roadmap {
       .content {
         width: unset !important;
+
         .roadmap-img {
           margin: 0 auto 0 20px;
         }
+
         .road-map-Q1 {
-          bottom: 80px;
-          left: 230px;
+          bottom: 180px;
+          left: 160px;
         }
+
         .road-map-Q2 {
-          right: 30px;
-          top: 280px;
+          right: 120px;
+          top: 470px;
         }
+
         .road-map-Q3 {
-          left: 110px;
-          top: 60px;
+          right: 120px;
+          top: 200px;
         }
+
         .road-map-Q4 {
-          right: 240px;
-          top: 60px;
+          right: 30px;
+          top: 40px;
         }
       }
     }
   }
 }
+
 @media only screen and (max-width: 767px) {
   .wrapper {
     background-image: url(@/assets/images/roadmap/roadmap-bg-1.png);
     background-repeat: no-repeat;
     background-position: top;
+
     .roadmap {
       .roadmap-phone-box {
         background-image: url(@/assets/images/roadmap/roadmap-bg-2.png);
         background-repeat: no-repeat;
         background-position: 0 180%;
+
         .roadmap-box-left,
         .roadmap-box-right {
           margin-left: 15px;
+
           .roadmap-point {
             width: 4px;
             height: 4px;
@@ -337,12 +486,14 @@ const scrrenWidth = document.body.clientWidth;
             margin: 6px 6px 0 6px;
             display: inline-block;
           }
+
           .roadmap-title {
             font-size: 24px;
             font-weight: bold;
             color: #ffffff;
             padding-left: 15px;
           }
+
           .roadmap-list {
             margin-top: 10px;
             font-weight: 400;
@@ -351,10 +502,12 @@ const scrrenWidth = document.body.clientWidth;
             display: flex;
           }
         }
+
         .roadmap-phone {
           padding-top: 40px;
           width: 100%;
           display: flex;
+
           img {
             min-width: 66.75px;
             width: 66.75px;
