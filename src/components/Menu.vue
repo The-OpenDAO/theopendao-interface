@@ -63,7 +63,7 @@
             ></el-dropdown-item
           >
           <el-dropdown-item divided
-            ><a target="_blank" href="https://discord.gg/theopendao"
+            ><a target="_blank" href="https://discord.gg/zCzCQbjy"
               >Discord</a
             ></el-dropdown-item
           >

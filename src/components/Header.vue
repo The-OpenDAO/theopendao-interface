@@ -114,7 +114,7 @@
                 ></el-menu-item
               >
               <el-menu-item
-                ><a target="_blank" href="https://discord.gg/theopendao"
+                ><a target="_blank" href="https://discord.gg/zCzCQbjy"
                   >Discord</a
                 ></el-menu-item
               >
