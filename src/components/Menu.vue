@@ -64,7 +64,7 @@
           >
           <!-- po -->
           <el-dropdown-item divided
-            ><a target="_blank" href="https://discord.gg/zCzCQbjy"
+            ><a target="_blank" href="https://discord.gg/the-opendao-917822256657350678"
               >Discord</a
             ></el-dropdown-item
           >
